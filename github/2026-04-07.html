@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Digest — 7 апреля 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #7ee787;
+    margin-bottom: .3rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: #8b949e;
+    margin-bottom: 2.5rem;
+    font-size: .95rem;
+  }
+  .section {
+    margin-bottom: 2.5rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    color: #f0883e;
+    border-bottom: 2px solid #21262d;
+    padding-bottom: .5rem;
+    margin-bottom: 1.2rem;
+    margin-top: 2.5rem;
+  }
+  .section-title:first-of-type { margin-top: 0; }
+  .subsection-title {
+    font-size: 1.15rem;
+    color: #d2a8ff;
+    margin-bottom: .8rem;
+    margin-top: 1.5rem;
+    padding-left: .3rem;
+    border-left: 3px solid #d2a8ff;
+    padding-left: .6rem;
+  }
+  .card {
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin-bottom: .8rem;
+    transition: border-color .2s;
+  }
+  .card:hover { border-color: #7ee787; }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+    flex-wrap: wrap;
+    gap: .4rem;
+  }
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #e6edf3;
+  }
+  .card-title a {
+    color: #e6edf3;
+    text-decoration: none;
+  }
+  .card-title a:hover { color: #7ee787; text-decoration: underline; }
+  .stars {
+    font-size: .7rem;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    background: #0f2d1a;
+    color: #7ee787;
+    border: 1px solid #2ea04366;
+  }
+  .card-desc {
+    color: #b1bac4;
+    font-size: .92rem;
+  }
+  .card-link {
+    display: inline-block;
+    margin-top: .4rem;
+    font-size: .82rem;
+  }
+  a { color: #58a6ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .source {
+    text-align: center;
+    color: #484f58;
+    font-size: .8rem;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #21262d;
+  }
+  @media (max-width: 600px) {
+    body { padding: 1rem .5rem; }
+    h1 { font-size: 1.5rem; }
+    .section-title { font-size: 1.2rem; }
+    .card { padding: .8rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>GitHub Digest — 7 апреля 2026</h1>
+<p class="subtitle">Период: 24 марта — 7 апреля 2026 · ~120 проектов</p>
+
+<!-- ============ AI/LLM ============ -->
+<h2 class="section-title">AI/LLM инструменты</h2>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent</a></span>
+    <span class="stars">+9 662</span>
+  </div>
+  <p class="card-desc">Самообучающийся агент от Nous Research. Сам создаёт навыки из опыта, запоминает пользователя между сессиями. Работает через Telegram, Discord, Slack, WhatsApp, Signal. v0.7.0: pluggable memory, антидетект-браузер Camofox. Единственный открытый агент с петлёй самообучения.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/NousResearch/hermes-agent-self-evolution">NousResearch/hermes-agent-self-evolution</a></span>
+  </div>
+  <p class="card-desc">Модуль эволюционного самоулучшения для Hermes Agent. Оптимизирует навыки, промпты и код через DSPy + генетический алгоритм GEPA. AI, который автоматически улучшает другой AI.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/microsoft/agent-framework">microsoft/agent-framework</a></span>
+    <span class="stars">+707</span>
+  </div>
+  <p class="card-desc">Официальный фреймворк Microsoft для построения AI-агентов. v1.0 вышел 2 апреля. Python и .NET. Граф-оркестрация, стриминг, чекпоинты, human-in-the-loop, A2A и MCP. Слияние Semantic Kernel + AutoGen в единый production-ready фреймворк.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/SakanaAI/AI-Scientist-v2">SakanaAI/AI-Scientist-v2</a></span>
+    <span class="stars">+1 094</span>
+  </div>
+  <p class="card-desc">Агентная система для полностью автоматического научного исследования. Генерирует гипотезы, ставит эксперименты, анализирует данные, пишет статьи. Первая AI-написанная статья, принятая через рецензирование на ICLR.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/HKUDS/RAG-Anything">HKUDS/RAG-Anything</a></span>
+    <span class="stars">+571</span>
+  </div>
+  <p class="card-desc">Мультимодальный RAG поверх LightRAG. Обрабатывает текст, таблицы, изображения, формулы в едином интерфейсе. Двойной граф + гибридный поиск. Решает главную боль RAG — документы со смешанным контентом.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/HKUDS/DeepTutor">HKUDS/DeepTutor</a></span>
+    <span class="stars">+617</span>
+  </div>
+  <p class="card-desc">AI-репетитор с персонализацией. Каждый TutorBot — автономный агент со своей памятью и стилем. Мульти-агентная архитектура: чат, решение задач, генерация тестов, визуализация математики.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/antinomyhq/forgecode">antinomyhq/forgecode</a></span>
+    <span class="stars">+699</span>
+  </div>
+  <p class="card-desc">Мультимодельный AI-помощник для кодинга в терминале на Rust. Поддерживает Claude, GPT, Grok, DeepSeek, Gemini и 300+ моделей. Zero-config, restricted shell. Альтернатива Claude Code без привязки к провайдеру.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/google-ai-edge/LiteRT-LM">google-ai-edge/LiteRT-LM</a></span>
+    <span class="stars">+878</span>
+  </div>
+  <p class="card-desc">Фреймворк Google для запуска LLM на edge-устройствах. Боевой движок, который крутит Gemini Nano в Chrome и на Pixel Watch. Поддерживает Gemma, Llama, Phi-4, Qwen. Function calling прямо на устройстве.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/google-ai-edge/gallery">google-ai-edge/gallery</a></span>
+    <span class="stars">+2 008</span>
+  </div>
+  <p class="card-desc">Витрина on-device ML/GenAI сценариев от Google. Готовые рабочие примеры запуска AI-моделей на телефоне — Kotlin/Android.</p>
+</div>
+
+<!-- ============ Видеопроизводство и 3D ============ -->
+<h2 class="section-title">Видеопроизводство и 3D</h2>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/HKUDS/ViMax">HKUDS/ViMax</a></span>
+  </div>
+  <p class="card-desc">Агентная система для генерации видео "всё-в-одном": режиссёр, сценарист, продюсер и генератор. Описываешь идею — ViMax сам пишет сценарий, раскадровку, создаёт персонажей с консистентностью между кадрами, озвучку и финальное видео. Можно загрузить своё фото и стать камео. MIT.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/PKU-YuanGroup/Helios">PKU-YuanGroup/Helios</a></span>
+    <span class="stars">~1 600</span>
+  </div>
+  <p class="card-desc">Модель 14B для генерации длинных видео в реальном времени — 19.5 FPS на одном H100. Текст/картинка/видео на вход. Минутные ролики без KV-cache и разреженного внимания.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/deepbeepmeep/Wan2GP">deepbeepmeep/Wan2GP</a></span>
+  </div>
+  <p class="card-desc">Генератор видео для "бедных по GPU" — работает от 6 ГБ VRAM. Wan 2.1/2.2, Hunyuan Video, LTX Video, Flux. 121 кадр в 720p на 6 ГБ видеопамяти. Полностью локальный.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/RowanUnderwood/Synesthesia-AI-Video-Director">RowanUnderwood/Synesthesia-AI-Video-Director</a></span>
+    <span class="stars">41</span>
+  </div>
+  <p class="card-desc">Локальное Gradio-приложение для автоматизации AI-клипов на музыку. Анализирует стемы и текст, через LLM генерирует промпты для каждого кадра, отправляет в LTX Desktop, собирает монтаж.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/JaimeIsMe/comfystudio">JaimeIsMe/comfystudio</a></span>
+    <span class="stars">79</span>
+  </div>
+  <p class="card-desc">Видеоредактор с встроенной интеграцией ComfyUI — таймлайн, генерация и расширение видео из монтажного стола. Опенсорсная альтернатива Resolve/Final Cut с нейросетями.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/ID-LoRA/ID-LoRA-LTX2.3-ComfyUI">ID-LoRA/ID-LoRA-LTX2.3-ComfyUI</a></span>
+    <span class="stars">102</span>
+  </div>
+  <p class="card-desc">Нода ComfyUI для генерации видео с сохранением лица и голоса. Подаёшь референс-фото и образец голоса — на выходе видео с "тем же человеком".</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/kijai/ComfyUI-VideoColorGrading">kijai/ComfyUI-VideoColorGrading</a></span>
+    <span class="stars">37</span>
+  </div>
+  <p class="card-desc">Цветокоррекция видео в ComfyUI. От kijai — одного из самых активных авторов нод.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/xiaobiaodu/Mobile-GS">xiaobiaodu/Mobile-GS</a></span>
+    <span class="stars">216</span>
+  </div>
+  <p class="card-desc">[ICLR 2026] Gaussian Splatting в реальном времени на мобильных устройствах. До этого нормальный рендер сплэтов требовал десктопный GPU.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/fastgs/FastGS">fastgs/FastGS</a></span>
+  </div>
+  <p class="card-desc">[CVPR 2026] Обучение 3D Gaussian Splatting за 100 секунд (в лучшем — 77). Ускорение 2-7x, применимо к динамическим сценам, SLAM, реконструкции.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/SonnyC56/blunt">SonnyC56/blunt</a></span>
+    <span class="stars">34</span>
+  </div>
+  <p class="card-desc">Превращает любое фото в 3D гауссиан-сплэт за секунды. Одиночные фото, мульти-ракурс, 360-панорамы.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/ReconWorldLab/godot-gaussian-splatting">ReconWorldLab/godot-gaussian-splatting</a></span>
+    <span class="stars">142</span>
+  </div>
+  <p class="card-desc">Gaussian Splatting для Godot Engine в реальном времени. CompositorEffect-архитектура Godot 4. Первый серьёзный вариант сплэттинга для Godot.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/DazaiStudio/SplatRenderer-UEPlugin">DazaiStudio/SplatRenderer-UEPlugin</a></span>
+    <span class="stars">30</span>
+  </div>
+  <p class="card-desc">3D/4D Gaussian Splatting для Unreal Engine 5.5+. Статические и анимированные (4D) сплэты.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/HurtzDonutStudios/ai-forge-mcp">HurtzDonutStudios/ai-forge-mcp</a></span>
+    <span class="stars">13</span>
+  </div>
+  <p class="card-desc">278 AI-вызываемых инструментов через 11 MCP-серверов для Blender, Substance Painter, Substance Designer. Полный 3D-пайплайн через MCP.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/colosynstudio/LOD-generator">colosynstudio/LOD-generator</a></span>
+    <span class="stars">10</span>
+  </div>
+  <p class="card-desc">Blender-аддон для пакетной генерации LOD и экспорта FBX для UE и Unity.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/haolinwang819-boop/ai-video-generation-workflow">haolinwang819-boop/ai-video-generation-workflow</a></span>
+    <span class="stars">44</span>
+  </div>
+  <p class="card-desc">Полный конвейер: скрипт, слайды, TTS, субтитры, рендер через FFmpeg. Автоматизация объяснительных видео.</p>
+</div>
+
+<!-- ============ Креативные инструменты ============ -->
+<h2 class="section-title">Креативные инструменты</h2>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/pbakaus/radiant">pbakaus/radiant</a></span>
+    <span class="stars">672</span>
+  </div>
+  <p class="card-desc">94 готовых шейдерных анимации для веба — без зависимостей, без сборки. Canvas 2D и WebGL, 6 цветовых схем, автопауза. Для hero-секций и презентаций. SvelteKit.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/Shpigford/studio">Shpigford/studio</a></span>
+    <span class="stars">121</span>
+  </div>
+  <p class="card-desc">9 генеративных инструментов в одном: топокарты из шума Перлина, flow-field рисование, дизеринг Байера, WebGL-градиенты "жидкое стекло", мраморные текстуры, плоттерная графика, ASCII-арт. React 19 + p5.js + WebGL2, экспорт видео.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/remotion-dev/template-prompt-to-motion-graphics-saas">remotion-dev/template-prompt-to-motion-graphics-saas</a></span>
+    <span class="stars">158</span>
+  </div>
+  <p class="card-desc">AI-шаблон для Remotion: пишешь промпт — получаешь motion graphics. Генерирует код Remotion-компонентов через LLM, кинетическая типографика, визуализация данных, анимация логотипов.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/reactvideoeditor/clippkit">reactvideoeditor/clippkit</a></span>
+    <span class="stars">60</span>
+  </div>
+  <p class="card-desc">Готовые компоненты для Remotion: интро, текстовые эффекты, переходы, целые видеосцены.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/liyanhu666666/MotionMaster">liyanhu666666/MotionMaster</a></span>
+    <span class="stars">41</span>
+  </div>
+  <p class="card-desc">[CVPR 2026] Генерация и редактирование 3D-движений по текстовому описанию. "Человек танцует сальсу" — SMPL-X анимация. Qwen2.5-VL + токенизатор движений.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/Eluvade/cosmos">Eluvade/cosmos</a></span>
+    <span class="stars">7</span>
+  </div>
+  <p class="card-desc">Процедурный генератор небесных тел: планеты, звёзды, чёрные дыры, галактики в браузере через WebGL. 12 типов объектов, zero dependencies. TypeScript + GLSL.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/juliosuas/ai-garden">juliosuas/ai-garden</a></span>
+    <span class="stars">2</span>
+  </div>
+  <p class="card-desc">Пиксель-арт мир, который создают AI-агенты совместно. Claude, GPT, Gemini сажают растения, строят структуры, пишут музыку. 215+ растений, процедурный chiptune.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/ArtBlocks/skills">ArtBlocks/skills</a></span>
+    <span class="stars">4</span>
+  </div>
+  <p class="card-desc">Скиллы для ИИ-агентов для работы с Art Blocks — крупнейшей платформой генеративного искусства на блокчейне. Поиск проектов, скаффолдинг арт-скриптов.</p>
+</div>
+
+<!-- ============ Хайп-радар ============ -->
+<h2 class="section-title">Хайп-радар</h2>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/siddharthvaddem/openscreen">siddharthvaddem/openscreen</a></span>
+    <span class="stars">+14 400 · ~24 900</span>
+  </div>
+  <p class="card-desc">Бесплатная опенсорс-замена Screen Studio. Красивые демо-ролики без водяных знаков и подписки.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/microsoft/VibeVoice">microsoft/VibeVoice</a></span>
+    <span class="stars">+8 400 · ~37 200</span>
+  </div>
+  <p class="card-desc">Семейство голосовых моделей от Microsoft. TTS до 90 минут с 4 спикерами, ASR 60 минут за раз на 50+ языках. Частота 7.5 Hz, открытая лицензия.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/Yeachan-Heo/oh-my-claudecode">Yeachan-Heo/oh-my-claudecode</a></span>
+    <span class="stars">+7 800 · ~25 500</span>
+  </div>
+  <p class="card-desc">Мульти-агентная оркестрация для Claude Code. 19 агентов и 36 навыков. Автономное выполнение от идеи до кода.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/luongnv89/claude-howto">luongnv89/claude-howto</a></span>
+    <span class="stars">+12 100 · ~22 100</span>
+  </div>
+  <p class="card-desc">Визуальный гайд по Claude Code от базы до продвинутых агентов. Готовые шаблоны.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/abhigyanpatwari/GitNexus">abhigyanpatwari/GitNexus</a></span>
+    <span class="stars">+1 174 · ~24 200</span>
+  </div>
+  <p class="card-desc">Анализ кодовой базы в браузере: граф знаний + RAG-агент. Всё на клиенте, без серверов, без API-ключей.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/NVIDIA/personaplex">NVIDIA/personaplex</a></span>
+    <span class="stars">+663 · ~7 700</span>
+  </div>
+  <p class="card-desc">Полнодуплексная речевая модель от NVIDIA. Слушает и говорит одновременно, можно перебивать. Первая опенсорс-модель с натуральным разговором.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/google-research/timesfm">google-research/timesfm</a></span>
+    <span class="stars">+4 200 · ~15 300</span>
+  </div>
+  <p class="card-desc">Foundation-модель для прогнозирования временных рядов. Работает из коробки на любых данных без дообучения.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/VoltAgent/awesome-design-md">VoltAgent/awesome-design-md</a></span>
+    <span class="stars">~15 700</span>
+  </div>
+  <p class="card-desc">Коллекция DESIGN.md файлов с дизайн-системами популярных сайтов. Кидаешь в проект — AI строит UI в стиле нужного сайта.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/onyx-dot-app/onyx">onyx-dot-app/onyx</a></span>
+    <span class="stars">+5 200 · ~25 700</span>
+  </div>
+  <p class="card-desc">Открытая AI-платформа: чат с продвинутыми функциями, работает с любой LLM. Мультимодельный интерфейс с RAG и интеграциями.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/tobi/qmd">tobi/qmd</a></span>
+    <span class="stars">+859 · ~19 300</span>
+  </div>
+  <p class="card-desc">Мини-поисковик для CLI от CEO Shopify. Индексирует документы и заметки, ищет из терминала.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/sherlock-project/sherlock">sherlock-project/sherlock</a></span>
+    <span class="stars">+5 800 · ~80 200</span>
+  </div>
+  <p class="card-desc">Поиск аккаунтов по юзернейму во всех соцсетях. Классика OSINT, очередная волна вирусного внимания.</p>
+</div>
+
+<!-- ============ MCP-серверы ============ -->
+<h2 class="section-title">MCP-серверы — бриллианты</h2>
+
+<h3 class="subsection-title">Видеомонтаж</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/samuelgursky/davinci-resolve-mcp">samuelgursky/davinci-resolve-mcp</a></span>
+    <span class="stars">762</span>
+  </div>
+  <p class="card-desc">Полный доступ к DaVinci Resolve: таймлайн, цветокоррекция, аудио, ключевые кадры. Установщик под все ОС.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/apvlv/davinci-resolve-mcp">apvlv/davinci-resolve-mcp</a></span>
+    <span class="stars">55</span>
+  </div>
+  <p class="card-desc">MCP для DaVinci Resolve + Fusion. Монтаж и композитинг.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/Positronikal/davinci-mcp-professional">Positronikal/davinci-mcp-professional</a></span>
+    <span class="stars">15</span>
+  </div>
+  <p class="card-desc">Профессиональный MCP для Resolve Studio до v20. Установка одной кнопкой.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/royshil/obs-mcp">royshil/obs-mcp</a></span>
+    <span class="stars">79</span>
+  </div>
+  <p class="card-desc">Управление OBS: сцены, источники, стриминг, запись, переходы.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/ironystock/agentic-obs">ironystock/agentic-obs</a></span>
+    <span class="stars">10</span>
+  </div>
+  <p class="card-desc">69 инструментов для OBS. Полная автоматизация.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/video-creator/ffmpeg-mcp">video-creator/ffmpeg-mcp</a></span>
+    <span class="stars">128</span>
+  </div>
+  <p class="card-desc">FFmpeg через диалог: поиск, нарезка, склейка, наложение, воспроизведение.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/misbahsy/video-audio-mcp">misbahsy/video-audio-mcp</a></span>
+    <span class="stars">67</span>
+  </div>
+  <p class="card-desc">Профессиональный видео/аудио монтаж через FFmpeg: конвертация, оверлеи, переходы, обработка звука.</p>
+</div>
+
+<h3 class="subsection-title">Adobe</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/mikechambers/adb-mcp">mikechambers/adb-mcp</a></span>
+    <span class="stars">547</span>
+  </div>
+  <p class="card-desc">Единый MCP для Photoshop, Premiere, InDesign, Illustrator, After Effects. От сотрудника Adobe.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/Dakkshin/after-effects-mcp">Dakkshin/after-effects-mcp</a></span>
+    <span class="stars">275</span>
+  </div>
+  <p class="card-desc">MCP для After Effects. Композиции, текст, шейпы, свойства через ExtendScript.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/loonghao/photoshop-python-api-mcp-server">loonghao/photoshop-python-api-mcp-server</a></span>
+    <span class="stars">192</span>
+  </div>
+  <p class="card-desc">MCP для Photoshop через Python API.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP">hetpatel-11/Adobe_Premiere_Pro_MCP</a></span>
+    <span class="stars">114</span>
+  </div>
+  <p class="card-desc">MCP для Premiere Pro: секвенции, таймлайн, переходы, эффекты, ключевые кадры, экспорт.</p>
+</div>
+
+<h3 class="subsection-title">3D и игровые движки</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/CommonSenseMachines/blender-mcp">CommonSenseMachines/blender-mcp</a></span>
+    <span class="stars">127</span>
+  </div>
+  <p class="card-desc">Текст в 4D-миры в Blender. CSM.ai + LLM.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/poly-mcp/Blender-MCP-Server">poly-mcp/Blender-MCP-Server</a></span>
+    <span class="stars">35</span>
+  </div>
+  <p class="card-desc">51 инструмент для Blender. Потокобезопасное выполнение.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/neka-nat/freecad-mcp">neka-nat/freecad-mcp</a></span>
+    <span class="stars">685</span>
+  </div>
+  <p class="card-desc">Управление FreeCAD: 3D-модели через текстовые команды.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/contextform/freecad-mcp">contextform/freecad-mcp</a></span>
+    <span class="stars">65</span>
+  </div>
+  <p class="card-desc">Параметрическое моделирование FreeCAD через AI.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/jhacksman/OpenSCAD-MCP-Server">jhacksman/OpenSCAD-MCP-Server</a></span>
+    <span class="stars">139</span>
+  </div>
+  <p class="card-desc">3D-модели из текста в OpenSCAD. Поддержка отправки на 3D-принтер.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/quellant/openscad-mcp">quellant/openscad-mcp</a></span>
+    <span class="stars">63</span>
+  </div>
+  <p class="card-desc">Рендеринг, экспорт и анализ OpenSCAD моделей.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/tugcantopaloglu/godot-mcp">tugcantopaloglu/godot-mcp</a></span>
+    <span class="stars">83</span>
+  </div>
+  <p class="card-desc">149 инструментов для Godot 4.x: сеть, рендеринг, UI, аудио, анимации, физика.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/3ddelano/gdai-mcp-plugin-godot">3ddelano/gdai-mcp-plugin-godot</a></span>
+    <span class="stars">78</span>
+  </div>
+  <p class="card-desc">Плагин Godot + MCP: сцены, ресурсы, скрипты. Работает с Claude, Cursor, VSCode.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/ChiR24/Unreal_mcp">ChiR24/Unreal_mcp</a></span>
+    <span class="stars">474</span>
+  </div>
+  <p class="card-desc">Управление Unreal Engine через C++ Automation Bridge.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/ayeletstudioindia/unreal-analyzer-mcp">ayeletstudioindia/unreal-analyzer-mcp</a></span>
+    <span class="stars">153</span>
+  </div>
+  <p class="card-desc">Анализ исходного кода UE5 через AI.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/IvanMurzak/Unity-MCP">IvanMurzak/Unity-MCP</a></span>
+    <span class="stars">1 983</span>
+  </div>
+  <p class="card-desc">AI-ассистент для Unity: любой C#-метод превращается в инструмент одной строкой.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/AnkleBreaker-Studio/unity-mcp-server">AnkleBreaker-Studio/unity-mcp-server</a></span>
+    <span class="stars">89</span>
+  </div>
+  <p class="card-desc">268 инструментов для Unity: Shader Graph, физика, NavMesh, анимации.</p>
+</div>
+
+<h3 class="subsection-title">Мессенджеры</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/chigwell/telegram-mcp">chigwell/telegram-mcp</a></span>
+    <span class="stars">891</span>
+  </div>
+  <p class="card-desc">Telegram через Telethon (MTProto). Чтение чатов, управление группами, отправка медиа.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/sparfenyuk/mcp-telegram">sparfenyuk/mcp-telegram</a></span>
+    <span class="stars">174</span>
+  </div>
+  <p class="card-desc">Telegram через MTProto.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/lharries/whatsapp-mcp">lharries/whatsapp-mcp</a></span>
+    <span class="stars">5 491</span>
+  </div>
+  <p class="card-desc">WhatsApp: поиск/чтение сообщений, медиа, контакты, отправка.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/retog/signal-mcp">retog/signal-mcp</a></span>
+    <span class="stars">2</span>
+  </div>
+  <p class="card-desc">Signal через signal-cli.</p>
+</div>
+
+<h3 class="subsection-title">Умный дом</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/homeassistant-ai/ha-mcp">homeassistant-ai/ha-mcp</a></span>
+    <span class="stars">2 138</span>
+  </div>
+  <p class="card-desc">Home Assistant: устройства, состояния, автоматизации. Данные не уходят из сети.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/tevonsb/homeassistant-mcp">tevonsb/homeassistant-mcp</a></span>
+    <span class="stars">562</span>
+  </div>
+  <p class="card-desc">Мост Home Assistant и LLM. Полный API + Docker.</p>
+</div>
+
+<h3 class="subsection-title">Электроника</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/mixelpixx/KiCAD-MCP-Server">mixelpixx/KiCAD-MCP-Server</a></span>
+    <span class="stars">587</span>
+  </div>
+  <p class="card-desc">122 инструмента для KiCad: проектирование плат через AI.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/Seeed-Studio/kicad-mcp-server">Seeed-Studio/kicad-mcp-server</a></span>
+    <span class="stars">27</span>
+  </div>
+  <p class="card-desc">KiCad 9.0: анализ схем, трассировка, DRC, генерация кода.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/circuit-synth/mcp-kicad-sch-api">circuit-synth/mcp-kicad-sch-api</a></span>
+    <span class="stars">16</span>
+  </div>
+  <p class="card-desc">Создание и модификация схем KiCad.</p>
+</div>
+
+<h3 class="subsection-title">Музыка</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/xiaolaa2/ableton-copilot-mcp">xiaolaa2/ableton-copilot-mcp</a></span>
+    <span class="stars">73</span>
+  </div>
+  <p class="card-desc">Ableton Live: треки, MIDI, запись, Arrangement View в реальном времени.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/dschuler36/reaper-mcp-server">dschuler36/reaper-mcp-server</a></span>
+    <span class="stars">94</span>
+  </div>
+  <p class="card-desc">Reaper DAW: парсинг .RPP, анализ треков и FX.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/itsuzef/reaper-mcp">itsuzef/reaper-mcp</a></span>
+    <span class="stars">48</span>
+  </div>
+  <p class="card-desc">AI-агент создаёт сведённые и мастеренные треки в REAPER.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/Tok/SuperColliderMCP">Tok/SuperColliderMCP</a></span>
+    <span class="stars">19</span>
+  </div>
+  <p class="card-desc">SuperCollider через OSC: паттерны, синтезаторы, секвенции.</p>
+</div>
+
+<h3 class="subsection-title">Графика</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/libreearth/gimp-mcp">libreearth/gimp-mcp</a></span>
+    <span class="stars">100</span>
+  </div>
+  <p class="card-desc">GIMP: редактирование изображений через текстовые команды.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/grumpydevorg/inkscape-mcps">grumpydevorg/inkscape-mcps</a></span>
+    <span class="stars">31</span>
+  </div>
+  <p class="card-desc">Inkscape: CLI и DOM-манипуляции.</p>
+</div>
+
+<h3 class="subsection-title">Прочее</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/stass/exif-mcp">stass/exif-mcp</a></span>
+    <span class="stars">36</span>
+  </div>
+  <p class="card-desc">EXIF/XMP метаданные из фото. JPEG, PNG, TIFF, HEIC. Офлайн.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/tarnover/mcp-sysoperator">tarnover/mcp-sysoperator</a></span>
+    <span class="stars">26</span>
+  </div>
+  <p class="card-desc">Ansible, Terraform, LocalStack через MCP.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/alexei-led/k8s-mcp-server">alexei-led/k8s-mcp-server</a></span>
+    <span class="stars">207</span>
+  </div>
+  <p class="card-desc">kubectl, helm, istioctl, argocd через AI.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/illuminaresolutions/n8n-mcp-server">illuminaresolutions/n8n-mcp-server</a></span>
+    <span class="stars">119</span>
+  </div>
+  <p class="card-desc">n8n: воркфлоу, исполнения, учётные данные.</p>
+</div>
+
+<!-- ============ Claude Code — экосистема ============ -->
+<h2 class="section-title">Claude Code — экосистема</h2>
+
+<h3 class="subsection-title">Коллекции навыков</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/alirezarezvani/claude-skills">alirezarezvani/claude-skills</a></span>
+  </div>
+  <p class="card-desc">220+ навыков и плагинов для Claude Code, Codex, Gemini CLI, Cursor и 8 других инструментов. Инженерия, маркетинг, продукт, безопасность.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/VoltAgent/awesome-agent-skills">VoltAgent/awesome-agent-skills</a></span>
+  </div>
+  <p class="card-desc">1000+ навыков от Anthropic, Vercel, Stripe, Cloudflare, Sentry, Figma и комьюнити.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/glebis/claude-skills">glebis/claude-skills</a></span>
+  </div>
+  <p class="card-desc">Компактная, но качественная коллекция навыков для Claude Code.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/levnikolaevich/claude-code-skills">levnikolaevich/claude-code-skills</a></span>
+  </div>
+  <p class="card-desc">Плагин-набор + MCP-серверы. Agile-пайплайн, мультимодельное ревью, аудит. hex-line, hex-graph, hex-ssh.</p>
+</div>
+
+<h3 class="subsection-title">Awesome-списки</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/rohitg00/awesome-claude-code-toolkit">rohitg00/awesome-claude-code-toolkit</a></span>
+  </div>
+  <p class="card-desc">Самый большой набор: 135 агентов, 35 навыков (+400k через SkillKit), 42 команды, 150+ плагинов, 19 хуков. Был #1 в трендах.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/hesreallyhim/awesome-claude-code">hesreallyhim/awesome-claude-code</a></span>
+  </div>
+  <p class="card-desc">Курированный список навыков, хуков, команд, оркестраторов, плагинов.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/ComposioHQ/awesome-claude-plugins">ComposioHQ/awesome-claude-plugins</a></span>
+  </div>
+  <p class="card-desc">Курированный список плагинов + connect-apps для 500+ сервисов.</p>
+</div>
+
+<h3 class="subsection-title">Хуки и автоматизация</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/disler/claude-code-hooks-mastery">disler/claude-code-hooks-mastery</a></span>
+  </div>
+  <p class="card-desc">Полное покрытие 13 событий хуков с логированием. Учебный проект.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/karanb192/claude-code-hooks">karanb192/claude-code-hooks</a></span>
+  </div>
+  <p class="card-desc">Готовые хуки. Копируй и настраивай.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/decider/claude-hooks">decider/claude-hooks</a></span>
+  </div>
+  <p class="card-desc">Хуки для принудительного соблюдения чистого кода.</p>
+</div>
+
+<h3 class="subsection-title">Аналитика</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/nwiizo/claudelytics">nwiizo/claudelytics</a></span>
+  </div>
+  <p class="card-desc">CLI на Rust для анализа использования Claude Code. TUI с 9 вкладками, живой мониторинг, экспорт CSV.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/chiphuyen/sniffly">chiphuyen/sniffly</a></span>
+  </div>
+  <p class="card-desc">Дашборд от Chip Huyen. Разбирает логи, показывает статистику ошибок (~30% — "файл не найден"). <a href="https://sniffly.dev/">sniffly.dev</a></p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/ryoppippi/ccusage">ryoppippi/ccusage</a></span>
+  </div>
+  <p class="card-desc">Анализ токенов из JSONL. Кэш-токены, офлайн, MCP-интеграция. <a href="https://ccusage.com/">ccusage.com</a></p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/toolsu/ccost">toolsu/ccost</a></span>
+  </div>
+  <p class="card-desc">Анализ расходов и токенов из логов бесед.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/badlogic/cccost">badlogic/cccost</a></span>
+  </div>
+  <p class="card-desc">Перехват API-запросов через hook на fetch(), точные данные о расходах.</p>
+</div>
+
+<h3 class="subsection-title">Управление контекстом</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/nwiizo/cctx">nwiizo/cctx</a></span>
+  </div>
+  <p class="card-desc">Менеджер контекстов в стиле kubectx. Переключение work/personal/project одной командой. Rust.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/zilliztech/claude-context">zilliztech/claude-context</a></span>
+  </div>
+  <p class="card-desc">MCP для семантического поиска по кодовой базе. Вся кодовая база как контекст.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/FlineDev/ContextKit">FlineDev/ContextKit</a></span>
+  </div>
+  <p class="card-desc">Система инженерии контекста и планирования для Claude Code.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/mksglu/context-mode">mksglu/context-mode</a></span>
+  </div>
+  <p class="card-desc">Оптимизация контекстного окна — сокращение на 98%. 12 платформ.</p>
+</div>
+
+<h3 class="subsection-title">Мультиагентная оркестрация</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/nwiizo/ccswarm">nwiizo/ccswarm</a></span>
+  </div>
+  <p class="card-desc">Мультиагентная оркестрация с изоляцией через Git worktree.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/ComposioHQ/agent-orchestrator">ComposioHQ/agent-orchestrator</a></span>
+  </div>
+  <p class="card-desc">Параллельные агенты: планирование, CI, конфликты, код-ревью. Каждый агент — свой worktree и PR.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/dsifry/metaswarm">dsifry/metaswarm</a></span>
+  </div>
+  <p class="card-desc">18 агентов, 13 навыков, 15 команд. TDD, quality gates, spec-driven.</p>
+</div>
+
+<h3 class="subsection-title">Интеграции с редакторами</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/coder/claudecode.nvim">coder/claudecode.nvim</a></span>
+  </div>
+  <p class="card-desc">IDE-интеграция Claude Code для Neovim через WebSocket MCP.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/manzaltu/claude-code-ide.el">manzaltu/claude-code-ide.el</a></span>
+  </div>
+  <p class="card-desc">Claude Code для Emacs через MCP.</p>
+</div>
+
+<h3 class="subsection-title">Конфиги и шаблоны</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/ChrisWiles/claude-code-showcase">ChrisWiles/claude-code-showcase</a></span>
+  </div>
+  <p class="card-desc">Полный пример настройки: хуки, навыки, агенты, команды, GitHub Actions.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/davila7/claude-code-templates">davila7/claude-code-templates</a></span>
+  </div>
+  <p class="card-desc">CLI для установки готовых конфигураций по частям.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/zircote/.claude">zircote/.claude</a></span>
+  </div>
+  <p class="card-desc">Дотфайлы: агенты по доменам, команды, оптимизации под Opus 4.5.</p>
+</div>
+
+<h3 class="subsection-title">Гайды</h3>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/ykdojo/claude-code-tips">ykdojo/claude-code-tips</a></span>
+  </div>
+  <p class="card-desc">45 советов, включая урезание системного промпта вдвое и использование Gemini CLI как подчинённого.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="card-title"><a href="https://github.com/FlorianBruniaux/claude-code-ultimate-guide">FlorianBruniaux/claude-code-ultimate-guide</a></span>
+  </div>
+  <p class="card-desc">Полный гайд от новичка до power user.</p>
+</div>
+
+<p class="source">
+  Собрано 7 апреля 2026 · ~120 проектов · Период: 24 марта — 7 апреля 2026
+</p>
+
+</div>
+</body>
+</html>

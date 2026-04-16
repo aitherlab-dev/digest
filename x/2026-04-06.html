@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>X News Digest — 6 April 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #f0f6fc;
+    margin-bottom: 0.3rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: #8b949e;
+    font-size: 0.95rem;
+    margin-bottom: 2.5rem;
+  }
+  .topic {
+    margin-bottom: 2.5rem;
+  }
+  .topic-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #21262d;
+  }
+  .topic-icon {
+    font-size: 1.5rem;
+  }
+  .topic-title {
+    font-size: 1.35rem;
+    color: #f0f6fc;
+    font-weight: 700;
+  }
+  .card {
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.75rem;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: #388bfd; }
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .author {
+    color: #58a6ff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  .author:hover { text-decoration: underline; }
+  .stats {
+    display: flex;
+    gap: 0.8rem;
+    font-size: 0.8rem;
+    color: #8b949e;
+  }
+  .stats span { display: flex; align-items: center; gap: 3px; }
+  .card-text {
+    color: #c9d1d9;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  .card-link {
+    font-size: 0.8rem;
+  }
+  .card-link a {
+    color: #388bfd;
+    text-decoration: none;
+  }
+  .card-link a:hover { text-decoration: underline; }
+  .hot {
+    border-left: 3px solid #f85149;
+  }
+  .warm {
+    border-left: 3px solid #d29922;
+  }
+  .badge {
+    display: inline-block;
+    background: #f8514922;
+    color: #f85149;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+  }
+  .badge.warm-badge {
+    background: #d2992222;
+    color: #d29922;
+  }
+  footer {
+    text-align: center;
+    color: #484f58;
+    font-size: 0.8rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #21262d;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>X News Digest</h1>
+<p class="subtitle">6 April 2026 &mdash; AI, Anthropic/Claude Code, World News</p>
+
+<!-- ============ AI / MODELS ============ -->
+<div class="topic">
+  <div class="topic-header">
+    <span class="topic-icon">&#129302;</span>
+    <span class="topic-title">AI &mdash; Модели, релизы, исследования</span>
+  </div>
+
+  <div class="card hot">
+    <div class="card-top">
+      <a class="author" href="https://x.com/mark_k">@mark_k</a>
+      <div class="stats"><span>&#10084; 275</span></div>
+    </div>
+    <div class="card-text">GPT-Image-2 от OpenAI, похоже, выйдет на этой неделе. Авторегрессивная мультимодальная модель изображений. Если побьёт Nano Banana Pro &mdash; это новый SOTA. <span class="badge">HOT</span></div>
+    <div class="card-link"><a href="https://x.com/mark_k/status/2040862011148456009">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card warm">
+    <div class="card-top">
+      <a class="author" href="https://x.com/drkeithsiau">@drkeithsiau</a>
+      <div class="stats"><span>&#10084; 63</span></div>
+    </div>
+    <div class="card-text">Утекшее изображение анатомии человека, сгенерированное GPT-Image-2. Обсуждают анатомическую точность новой модели.</div>
+    <div class="card-link"><a href="https://x.com/drkeithsiau/status/2040853518148383017">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/bydhruvil">@bydhruvil</a>
+      <div class="stats"><span>&#10084; 4</span></div>
+    </div>
+    <div class="card-text">GPT-Image-2 утёк &mdash; уже тестируется на LMarena под фейковыми именами (maskingtape-alpha, gaffertape-alpha). Безупречный рендеринг текста и знания о мире.</div>
+    <div class="card-link"><a href="https://x.com/bydhruvil/status/2040821837618446579">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/yaelkroy">@yaelkroy</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">OpenAI готовит не просто итерацию, а глубокий архитектурный перезапуск. Следующий шаг &mdash; новая базовая модель с более сильным фундаментом и естественным рассуждением.</div>
+    <div class="card-link"><a href="https://x.com/yaelkroy/status/2040988234105102454">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/mdtf79">@mdtf79</a>
+      <div class="stats"><span>&#10084; 1</span></div>
+    </div>
+    <div class="card-text">OpenAI вкладывает слишком много в Spud, чтобы это было просто GPT-5.5. Скорее всего это GPT-6 или GPT-6o &mdash; совершенно новая архитектура.</div>
+    <div class="card-link"><a href="https://x.com/mdtf79/status/2040846119383781579">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card warm">
+    <div class="card-top">
+      <a class="author" href="https://x.com/SmindCrypto">@SmindCrypto</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Google DeepMind выпустил Gemma 4 &mdash; модель специально для Agentic AI. Пока все следили за Ближним Востоком, Google сдвинул ландшафт AI.</div>
+    <div class="card-link"><a href="https://x.com/SmindCrypto/status/2040988028450283748">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/TinyWeightsAI">@TinyWeightsAI</a>
+      <div class="stats"><span>&#10084; 1</span></div>
+    </div>
+    <div class="card-text">Google DeepMind выпустил Gemma 4: 128K контекст, нативное мышление, мультимодальные агенты. Работает локально на телефоне или Raspberry Pi. Возможно, самый важный открытый релиз 2026.</div>
+    <div class="card-link"><a href="https://x.com/TinyWeightsAI/status/2040966621406077061">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/BOLTHYPE">@BOLTHYPE</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">GPT 5.4 в Codex стал лучше. Те же промпты дают ответы уровня senior-разработчика. Инкрементальное улучшение перед релизом 5.5?</div>
+    <div class="card-link"><a href="https://x.com/BOLTHYPE/status/2040981846969000423">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/mohsankab">@mohsankab</a>
+      <div class="stats"><span>&#10084; 5</span></div>
+    </div>
+    <div class="card-text">Исследование OpenAI: чем выше образование, тем чаще используют LLM (48% с магистратурой vs 37% без бакалавриата). AI не демократизирует &mdash; усиливает разрыв.</div>
+    <div class="card-link"><a href="https://x.com/mohsankab/status/2040551100051251595">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/ki_news_daily">@ki_news_daily</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Исследование Lyptus: наступательные AI-возможности удваиваются каждые ~5.7 месяцев с 2024 года. Больше токенов &mdash; выше успех эксплойтов. Open-source отстаёт.</div>
+    <div class="card-link"><a href="https://x.com/ki_news_daily/status/2040987630511243313">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/el09xc">@el09xc</a>
+      <div class="stats"><span>&#10084; 9</span></div>
+    </div>
+    <div class="card-text">Снижение потребления RAM для LLM на Mac в 3 раза &mdash; оптимизация, которая расширяет базу устройств. Больше устройств = больше контрибьюторов = сильнее экосистема.</div>
+    <div class="card-link"><a href="https://x.com/el09xc/status/2040402258194825680">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/TopSite_JP">@TopSite_JP</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Союз сценаристов Голливуда заключил 4-летний контракт со студиями. Усилена защита от обучения AI на сценариях без разрешения + увеличены роялти за стриминг.</div>
+    <div class="card-link"><a href="https://x.com/TopSite_JP/status/2040987965543850009">Open in X &rarr;</a></div>
+  </div>
+
+</div>
+
+<!-- ============ CLAUDE CODE / ANTHROPIC ============ -->
+<div class="topic">
+  <div class="topic-header">
+    <span class="topic-icon">&#9889;</span>
+    <span class="topic-title">Claude Code / Anthropic</span>
+  </div>
+
+  <div class="card hot">
+    <div class="card-top">
+      <a class="author" href="https://x.com/aibra">@aibra</a>
+      <div class="stats"><span>&#10084; 56</span></div>
+    </div>
+    <div class="card-text">MiniMax 2.7 &mdash; лучшая не-Claude модель для OpenClaw. GPT-5.4 нестабилен... может наконец починят с новым обновлением? <span class="badge">HOT</span></div>
+    <div class="card-link"><a href="https://x.com/aibra/status/2040941680463909338">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card hot">
+    <div class="card-top">
+      <a class="author" href="https://x.com/yaelkroy">@yaelkroy</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Anthropic закрыла лазейку &laquo;безлимитный Claude для сторонних агентов&raquo;. С 4 апреля подписки не покрывают использование через OpenClaw и подобные инструменты. Только API. <span class="badge">HOT</span></div>
+    <div class="card-link"><a href="https://x.com/yaelkroy/status/2040988233819988374">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card warm">
+    <div class="card-top">
+      <a class="author" href="https://x.com/theo">@theo</a>
+      <div class="stats"><span>&#10084; 9</span></div>
+    </div>
+    <div class="card-text">&laquo;Они так стараются убить OpenClaw, что сделали Claude Code непригодным. Я сдаюсь.&raquo; <span class="badge warm-badge">WARM</span></div>
+    <div class="card-link"><a href="https://x.com/theo/status/2040988058427023668">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card warm">
+    <div class="card-top">
+      <a class="author" href="https://x.com/JasonBotterill">@JasonBotterill</a>
+      <div class="stats"><span>&#10084; 8</span></div>
+    </div>
+    <div class="card-text">Пасхальное обновление Claude Code: если набрать /buddy &mdash; вылупляется яйцо и появляется питомец!</div>
+    <div class="card-link"><a href="https://x.com/JasonBotterill/status/2040975516908589301">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/LaboNft">@LaboNft</a>
+      <div class="stats"><span>&#10084; 2</span></div>
+    </div>
+    <div class="card-text">Anthropic 5 апреля технически заблокировала доступ OpenClaw к API через детекцию системных промптов. 880K просмотров, разработчики в ярости.</div>
+    <div class="card-link"><a href="https://x.com/LaboNft/status/2040959431530500437">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/johnlv73">@johnlv73</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Anthropic запустила PAC (комитет политического действия) для поддержки кандидатов, разделяющих их политическую повестку. AI-индустрия открыто выбирает сторону перед промежуточными выборами.</div>
+    <div class="card-link"><a href="https://x.com/johnlv73/status/2040988432147579305">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/data_cyborg">@data_cyborg</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Anthropic провела AI bug bounty на open source за месяц. Результат: найдено 500+ zero-day уязвимостей.</div>
+    <div class="card-link"><a href="https://x.com/data_cyborg/status/2040987896526840194">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/SundayBlender">@SundayBlender</a>
+      <div class="stats"><span>&#10084; 1</span></div>
+    </div>
+    <div class="card-text">Anthropic случайно опубликовала полный исходный код Claude Code &mdash; дебаг-файл попал в рутинное обновление.</div>
+    <div class="card-link"><a href="https://x.com/SundayBlender/status/2040942587528593721">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/Benzinga">@Benzinga</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Tech Weekend Round-Up: 50-летие Apple, приобретение Anthropic за $400M, помощь Meta на марафоне.</div>
+    <div class="card-link"><a href="https://x.com/Benzinga/status/2040987844252995694">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/kr0der">@kr0der</a>
+      <div class="stats"><span>&#10084; 3</span></div>
+    </div>
+    <div class="card-text">&laquo;Лучшая маркетинговая команда OpenAI &mdash; это Anthropic.&raquo;</div>
+    <div class="card-link"><a href="https://x.com/kr0der/status/2040988312861827460">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/tolibear_">@tolibear_</a>
+      <div class="stats"><span>&#10084; 3</span></div>
+    </div>
+    <div class="card-text">GPT 5.4 + xhigh thinking &mdash; теперь король. Грядущее обновление OpenClaw сделает GPT 5.4 стандартом для agentic-работы. GLM 5-Turbo тоже удивил.</div>
+    <div class="card-link"><a href="https://x.com/tolibear_/status/2040984522884272425">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/type0press">@type0press</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">OpenAI подписала контракт с Пентагоном на $200M через часы после бана Anthropic. Совпадение? OpenAI ещё за 14 месяцев до этого убрала запрет на военное использование и наняла экс-директора NSA в совет.</div>
+    <div class="card-link"><a href="https://x.com/type0press/status/2040988298731237648">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/orelohayo">@orelohayo</a>
+      <div class="stats"><span>&#10084; 1</span></div>
+    </div>
+    <div class="card-text">Проанализировал репо &laquo;автономного AI-пентестера&raquo; &mdash; по сути это обёртка над Claude с хорошими промптами. Но если это начало, страшно представить, что будет со следующим обновлением Claude Code.</div>
+    <div class="card-link"><a href="https://x.com/orelohayo/status/2040933530671214674">Open in X &rarr;</a></div>
+  </div>
+
+</div>
+
+<!-- ============ WORLD NEWS ============ -->
+<div class="topic">
+  <div class="topic-header">
+    <span class="topic-icon">&#127758;</span>
+    <span class="topic-title">Мировые новости</span>
+  </div>
+
+  <div class="card hot">
+    <div class="card-top">
+      <a class="author" href="https://x.com/NightSkyToday">@NightSkyToday</a>
+      <div class="stats"><span>&#10084; 69</span></div>
+    </div>
+    <div class="card-text">NASA объявила о прямой трансляции пролёта астронавтов Artemis II мимо Луны завтра. Совместно с Netflix снимается спецвыпуск. Первый пилотируемый полёт к Луне за 50+ лет. <span class="badge">HOT</span></div>
+    <div class="card-link"><a href="https://x.com/NightSkyToday/status/2040973576946536557">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card hot">
+    <div class="card-top">
+      <a class="author" href="https://x.com/NoaLevi07102023">@NoaLevi07102023</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Иранские ракеты ударили по Хайфе, есть жертвы. Американские посредники продвигают 45-дневное поэтапное перемирие. <span class="badge">HOT</span></div>
+    <div class="card-link"><a href="https://x.com/NoaLevi07102023/status/2040988495741694136">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card hot">
+    <div class="card-top">
+      <a class="author" href="https://x.com/eshaniverma809">@eshaniverma809</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Трамп выдвинул ультиматум Ирану &mdash; угрожает уничтожить электростанции и мосты, если сделка не будет заключена к вечеру вторника. Эксперты предупреждают о военных преступлениях.</div>
+    <div class="card-link"><a href="https://x.com/eshaniverma809/status/2040988018904052195">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/FineAndRich">@FineAndRich</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Папа Лев XIV призвал к немедленному пасхальному прекращению войны США-Израиля против Ирана. Переход от ракет к диалогу.</div>
+    <div class="card-link"><a href="https://x.com/FineAndRich/status/2040988695491174531">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/WorldBriefHD">@WorldBriefHD</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Украинские дроны-камикадзе уничтожают российские нефтяные терминалы в порту Новороссийска на Чёрном море этой ночью.</div>
+    <div class="card-link"><a href="https://x.com/WorldBriefHD/status/2040988386899738748">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/daobinhyen68">@daobinhyen68</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Трамп объявил тарифы до 100% на отдельные фармацевтические препараты, скорректировал тарифы на металлы.</div>
+    <div class="card-link"><a href="https://x.com/daobinhyen68/status/2040985052755222838">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/Coffee__Capital">@Coffee__Capital</a>
+      <div class="stats"><span>&#10084; 3</span></div>
+    </div>
+    <div class="card-text">Тарифы 2.0 &mdash; год спустя та же схема: экстремальные действия, рынок падает на страхах рецессии, Трамп пытается использовать рычаг, контрагенты не сдаются.</div>
+    <div class="card-link"><a href="https://x.com/Coffee__Capital/status/2040984911499448379">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/EveryoneKnws1">@EveryoneKnws1</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Тарифы Трампа должны были ударить по Китаю. Год спустя: Китай показал рекордный торговый профицит в $1.2 трлн и самый быстрый рост производства за год.</div>
+    <div class="card-link"><a href="https://x.com/EveryoneKnws1/status/2040986497860399133">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/XiZnping">@XiZnping</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Тарифы vs реальность: компании признают &mdash; заменить Китай не получается. Даже близко не получается.</div>
+    <div class="card-link"><a href="https://x.com/XiZnping/status/2040988874734981287">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/worldnewsappx">@worldnewsappx</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Мир за 20 секунд: Испания борется с угрозой африканской чумы свиней. В Дублине и Белфасте отмечают годовщину Пасхального восстания. Planet Labs заморозила спутниковые снимки Ирана.</div>
+    <div class="card-link"><a href="https://x.com/worldnewsappx/status/2040967023774077422">Open in X &rarr;</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <a class="author" href="https://x.com/CBS_42">@CBS_42</a>
+      <div class="stats"><span>&#10084; 0</span></div>
+    </div>
+    <div class="card-text">Астронавты Artemis II преодолели половину пути к Луне. Туалет снова сломался. Готовятся побить рекорд Apollo по дальности полёта.</div>
+    <div class="card-link"><a href="https://x.com/CBS_42/status/2040987899416502531">Open in X &rarr;</a></div>
+  </div>
+
+</div>
+
+<footer>
+  Собрано автоматически из X (Twitter) &mdash; 6 апреля 2026 &mdash; Claude Code
+</footer>
+
+</div>
+</body>
+</html>
