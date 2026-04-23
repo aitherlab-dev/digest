@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и технологии - 23 апреля 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и технологии</h1>
+<div class="date">23 апреля 2026</div>
+
+<h2>OpenAI, ChatGPT и Codex</h2>
+<div class="card">
+  <div class="card-title">1. OpenAI выпустила Privacy Filter как open-weight модель для редактирования PII</div>
+  <div class="card-desc">Новая маленькая модель предназначена для контекстного поиска и маскирования персональных данных в неструктурированном тексте. Ключевая ставка здесь в том, что её можно запускать локально и прогонять большие потоки текста без отправки чувствительных данных на внешний сервер.</div>
+  <div class="card-meta"><a href="https://openai.com/index/introducing-openai-privacy-filter/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. OpenAI открыла ChatGPT for Clinicians для клинических задач и ресёрча</div>
+  <div class="card-desc">Компания оформила отдельный clinician-first сценарий вокруг документации, care consult и медицинского поиска, прямо привязав запуск к взрывному росту AI-использования среди врачей. По данным AMA, уже 72% physicians используют AI в клинической практике, так что OpenAI явно пытается закрепиться в одной из самых чувствительных профессиональных вертикалей.</div>
+  <div class="card-meta"><a href="https://openai.com/index/making-chatgpt-better-for-clinicians/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Responses API получила WebSocket-режим для ускорения agent loop</div>
+  <div class="card-desc">OpenAI подробно разобрала, как перешла от цепочки синхронных запросов к persistent connection с кэшем state по `previous_response_id`. На практике это дало до 40% ускорения agentic workflow и позволило Codex реально почувствовать скачок скорости новых coding-моделей вместо того, чтобы упираться в API overhead.</div>
+  <div class="card-meta"><a href="https://openai.com/index/speeding-up-agentic-workflows-with-websockets/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Codex CLI 0.123.0 вышел в stable с Bedrock provider и новым `/mcp verbose`</div>
+  <div class="card-desc">Свежий stable-релиз принёс встроенный `amazon-bedrock` provider, развёрнутую диагностику MCP, улучшения handoff между агентами и обновлённые model metadata с текущим default на `gpt-5.4`. Это один из тех релизов, где в одном пакете одновременно дорабатывают и реальный enterprise connectivity, и повседневный ergonomics для Codex-потока.</div>
+  <div class="card-meta"><a href="https://github.com/openai/codex/releases/tag/rust-v0.123.0">openai/codex releases</a></div>
+</div>
+
+<h2>AI и Tech радар</h2>
+<div class="card">
+  <div class="card-title">1. Google собрала Gemini Enterprise Agent Platform как новый control plane для агентов</div>
+  <div class="card-desc">На Cloud Next 26 Google свела возможности Vertex AI вместе с новым слоем для интеграции агентов, DevOps, security и governance. Платформа даёт доступ не только к Gemini 3.1 Pro и Lyria 3, но и к моделям Anthropic, то есть Google явно продаёт не одну модель, а целую enterprise-среду для агентных систем.</div>
+  <div class="card-meta"><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-enterprise-agent-platform/">Google Cloud</a> · <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/">Cloud Next 26</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Google выкатила восьмое поколение TPU как инфраструктуру под agentic era</div>
+  <div class="card-desc">В Cloud Next компания отдельно вынесла dual-chip подход для самых тяжёлых AI-нагрузок и прямо связала его с новой волной агентных систем. Посыл довольно жёсткий: если все бегут в multi-agent и long-running workload, то инфраструктурное преимущество снова становится не менее важным, чем сами модели.</div>
+  <div class="card-meta"><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/">Google</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Qwen открыла Qwen3.6-27B как плотную 27B-модель для агентного coding</div>
+  <div class="card-desc">Alibaba позиционирует её как более практичный dense-вариант без сложностей MoE-маршрутизации, но с very strong coding results. По заявленным benchmark цифрам модель обходит прежний open-source flagship Qwen3.5-397B-A17B на ряде ключевых coding-тестов, что делает релиз важным именно для реально разворачиваемых open models.</div>
+  <div class="card-meta"><a href="https://qwen.ai/blog?id=qwen3.6-27b">Qwen</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Moonshot продвигает Kimi K2.6 как open-source ставку на long-horizon coding</div>
+  <div class="card-desc">В техблоге K2.6 описана не как обычный чат-модельный апдейт, а как платформа под длинные инженерные траектории, coding-driven design и agent swarms. Параллельно компания уже раскрыла API pricing с контекстом 262k токенов, что показывает намерение быстро перевести громкий research-style launch в рабочий коммерческий контур.</div>
+  <div class="card-meta"><a href="https://www.kimi.com/blog/kimi-k2-6">Kimi blog</a> · <a href="https://www.kimi.com/resources/kimi-k2-6-pricing">Kimi pricing</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. GitHub ужесточает индивидуальные планы Copilot из-за агентной нагрузки</div>
+  <div class="card-desc">Компания поставила на паузу новые sign-up для Pro, Pro+ и Student, одновременно затянув usage limits и пересобрав доступность моделей. Формулировка в блоге очень прямолинейная: agentic workflow начали съедать заметно больше вычислений, чем старая структура индивидуальных подписок была рассчитана переварить.</div>
+  <div class="card-meta"><a href="https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/">GitHub Blog</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. Anthropic выпустила практический разбор trustworthy agents и prompt injection</div>
+  <div class="card-desc">Новый research-текст уходит от абстрактной safety-риторики к очень прикладной мысли: чем больше у агента инструментов и чем открытее среда, тем больше у атакующего точек входа. Anthropic отдельно подчёркивает, что никакая одна защита не спасает, а реальная agent security складывается только из многослойной обороны и жёсткого контроля прав.</div>
+  <div class="card-meta"><a href="https://www.anthropic.com/research/trustworthy-agents">Anthropic Research</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 23.04.2026</div>
+</body></html>
