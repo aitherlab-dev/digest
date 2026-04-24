@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Сборка index.html со вкладками: Мир | GitHub | X | Claude Code + AI | PH + HN."""
+"""Сборка index.html со вкладками: Мир | GitHub | X | AI | PH + HN."""
 import pathlib, html, json
 
 MONTHS = {1:"января",2:"февраля",3:"марта",4:"апреля",5:"мая",6:"июня",7:"июля",8:"августа",9:"сентября",10:"октября",11:"ноября",12:"декабря"}
@@ -14,7 +14,7 @@ TABS = [
     ('world', 'Мир'),
     ('github', 'GitHub'),
     ('x', 'X'),
-    ('ai', 'Claude Code + AI'),
+    ('ai', 'AI'),
     ('ph-hn', 'PH + HN'),
 ]
 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и технологии - 24 апреля 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и технологии</h1>
+<div class="date">24 апреля 2026</div>
+
+<h2>OpenAI, ChatGPT и Codex</h2>
+<div class="card">
+  <div class="card-title">1. OpenAI выпустила GPT-5.5 и сразу завела модель в ChatGPT и Codex</div>
+  <div class="card-desc">Компания подаёт GPT-5.5 как следующий шаг от просто умного чата к реально рабочему агенту, который лучше держит сложную цель, пользуется инструментами, проверяет себя и дотягивает задачу до конца. Отдельно важна упаковка релиза: модель не прячут в экспериментальном углу, а сразу раскатывают в ChatGPT и Codex как рабочий инструмент для серьёзных multi-step задач.</div>
+  <div class="card-meta"><a href="https://openai.com/index/introducing-gpt-5-5/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. OpenAI открыла Privacy Filter как open-weight модель для локальной маскировки PII</div>
+  <div class="card-desc">Privacy Filter рассчитан на быстрые privacy-workflow без обязательной отправки текста на внешний сервер: модель можно крутить локально и встраивать в свои пайплайны логирования, индексации и ревью. Это одна из тех практичных вещей, которые не выглядят громким флагманом, но на деле сильно влияют на зрелость AI-инфраструктуры.</div>
+  <div class="card-meta"><a href="https://openai.com/index/introducing-openai-privacy-filter/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. ChatGPT Images 2.0 принесла новый генератор изображений с лучшим текстом и визуальным reasoning</div>
+  <div class="card-desc">По описанию релиза OpenAI здесь ставка не только на более красивую картинку, но и на вещи, которые обычно ломают production-use: текст в кадре, мультиязычность и точное следование сложному запросу. Такой апдейт особенно важен для тех сценариев, где генерация уже стала частью реального документа, баннера, презентации или интерфейсного прототипа.</div>
+  <div class="card-meta"><a href="https://openai.com/index/introducing-chatgpt-images-2-0/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. OpenAI запустила GPT-Rosalind как life sciences research preview</div>
+  <div class="card-desc">Новая модель заточена под биологию, drug discovery, genomics и многошаговые научные workflow с инструментами и базами данных, а доступ к ней идёт через trusted access для квалифицированных enterprise-клиентов. Важный сигнал тут в том, что OpenAI всё увереннее дробит линейку на purpose-built модели под конкретные дорогие профессиональные вертикали.</div>
+  <div class="card-meta"><a href="https://openai.com/index/introducing-gpt-rosalind/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Codex CLI 0.124.0 вышел в stable с Bedrock, multi-environment app-server и стабилизированными hooks</div>
+  <div class="card-desc">Свежий релиз добавил Amazon Bedrock support, управление несколькими окружениями в app-server, стабильные hooks для MCP и `apply_patch`, а также несколько полезных фиксов вокруг Cloudflare cookies и `wait_agent`. Это хороший пример того, как OpenAI одновременно прокачивает и enterprise connectivity, и повседневную ergonomics для реальной агентной разработки.</div>
+  <div class="card-meta"><a href="https://github.com/openai/codex/releases/tag/rust-v0.124.0">openai/codex releases</a></div>
+</div>
+
+<h2>AI и Tech радар</h2>
+<div class="card">
+  <div class="card-title">1. Anthropic опубликовала подробный разбор деградации качества в Claude Code</div>
+  <div class="card-desc">Компания признала, что жалобы пользователей были связаны не с одной абстрактной «просадкой модели», а с тремя конкретными изменениями в продукте: понижением default reasoning effort, кэш-оптимизацией, которая теряла предыдущее reasoning, и багом на стыке context management, API и extended thinking. Сильная сторона этого постмортема в том, что он показывает продуктовую кухню агентных IDE уже как полноценной инженерной системы, а не магического чата.</div>
+  <div class="card-meta"><a href="https://www.anthropic.com/engineering/april-23-postmortem">Anthropic Engineering</a> · <a href="https://news.ycombinator.com/item?id=47878905">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Google Cloud Next 2026 оформляет новую ставку на Gemini Enterprise Agent Platform</div>
+  <div class="card-desc">Google больше не продаёт просто модель или набор API, а собирает полный enterprise-stack для агентов: build, governance, orchestration, security и delivery в одном контуре. Внутри того же анонса отдельно подсвечены восьмое поколение TPU и вообще весь тезис о переходе к «agentic enterprise», где компании должны управлять уже не десятками, а тысячами агентов.</div>
+  <div class="card-meta"><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/">Google</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Google подробно показала TorchTPU как путь к нативному PyTorch на TPU-кластерах</div>
+  <div class="card-desc">Материал важен не лозунгом, а конкретикой: eager-first подход, несколько режимов исполнения, `torch.compile` через XLA и явный упор на миграцию существующих PyTorch-нагрузок с минимальными изменениями. Если эта линия взлетит, TPUs могут стать для части команд заметно менее экзотической инфраструктурой, чем раньше.</div>
+  <div class="card-meta"><a href="https://developers.googleblog.com/torchtpu-running-pytorch-natively-on-tpus-at-google-scale/">Google Developers Blog</a> · <a href="https://news.ycombinator.com/item?id=47881786">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. DeepSeek выкатила V4 Preview с Pro и Flash-ветками и окном в 1 млн токенов</div>
+  <div class="card-desc">Китайский игрок снова давит сразу в двух направлениях: длинный контекст и агрессивная open-source цена против закрытых западных моделей. Даже если реальная производительность будет ещё долго проверяться комьюнити, сам факт релиза V4 в такой упаковке снова заставляет пересматривать карту open-weight конкуренции в coding и agentic tasks.</div>
+  <div class="card-meta"><a href="https://www.scmp.com/tech/big-tech/article/3351239/deepseek-releases-next-gen-ai-model-world-leading-efficiency">SCMP</a> · <a href="https://news.ycombinator.com/item?id=47884971">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Qwen3.6-27B продвигают как плотную 27B-модель, которая обходит куда более тяжёлого предшественника в coding</div>
+  <div class="card-desc">Главная идея релиза проста и очень практична: dense-модель привычного размера снова становится интереснее гигантского монстра, если она лучше ложится в реальные deployment-ограничения. Для open-source экосистемы это хороший маркер того, что гонка теперь идёт не только за максимальной величиной, но и за рабочим sweet spot между качеством и стоимостью запуска.</div>
+  <div class="card-meta"><a href="https://qwen.ai/blog?id=qwen3.6-27b">Qwen</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. Meta режет 10% штата, а объяснение снова упирается в AI-расходы и pressure на эффективность</div>
+  <div class="card-desc">История важна не только сама по себе, но и как симптом того, как крупные техкомпании перенастраивают бюджет под новые compute-heavy приоритеты. На практике это значит, что эра «AI everywhere» всё заметнее оплачивается не абстрактным ростом, а очень конкретной внутренней оптимизацией и перестройкой команд.</div>
+  <div class="card-meta"><a href="https://apnews.com/article/microsoft-voluntary-buyouts-ai-224eee4489cbc227244558ff02f5919a">AP</a> · <a href="https://news.ycombinator.com/item?id=47879986">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">7. Компрометация Bitwarden CLI стала одним из самых заметных security-сигналов дня</div>
+  <div class="card-desc">История с ongoing Checkmarx supply chain campaign быстро взлетела, потому что бьёт по очень неприятной точке доверия: CLI-инструменту, который люди ставят на машины разработчиков и CI-среды как нечто по умолчанию безопасное. Это ещё одно напоминание, что цепочка поставки dev tooling сегодня уже такой же боевой фронт, как прод-инфраструктура и npm-пакеты.</div>
+  <div class="card-meta"><a href="https://socket.dev/blog/bitwarden-cli-compromised">Socket</a> · <a href="https://news.ycombinator.com/item?id=47876043">HN</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 24.04.2026</div>
+</body></html>
