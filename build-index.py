@@ -8,7 +8,7 @@ def pretty(date_str):
     y,m,d = date_str.split('-')
     return f"{int(d)} {MONTHS[int(m)]} {y}"
 
-ROOT = pathlib.Path('/home/sasha/WORK/digest-repo')
+ROOT = pathlib.Path('/home/sasha/AGENT/data/digest-repo')
 
 TABS = [
     ('world', 'Мир'),
