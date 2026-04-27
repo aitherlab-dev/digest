@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и технологии - 27 апреля 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и технологии</h1>
+<div class="date">27 апреля 2026</div>
+
+<h2>OpenAI, ChatGPT и Codex</h2>
+<div class="card">
+  <div class="card-title">1. OpenAI опубликовала новый текст Сэма Альтмана о принципах компании</div>
+  <div class="card-desc">В посте от 26 апреля OpenAI формулирует пять принципов: democratization, empowerment, universal prosperity, resilience и adaptability. Важный акцент — не только дать доступ к AI, но и не допустить концентрации будущей силы у небольшого числа компаний. Для OpenAI это попытка публично зафиксировать рамку перед следующим этапом более автономных систем.</div>
+  <div class="card-meta"><a href="https://openai.com/index/our-principles/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. GPT-5.5 продолжает главный релизный цикл OpenAI недели</div>
+  <div class="card-desc">Официальный пост OpenAI описывает GPT-5.5 как модель для реальной работы за компьютером: coding, research, data analysis, documents, spreadsheets и tool use до завершения задачи. ChatGPT release notes подтверждают rollout в ChatGPT, а сам пост был обновлён 24 апреля: GPT-5.5 и GPT-5.5 Pro доступны в API. Сегодняшний X-сигнал от Сэма Альтмана — builders активно реагируют на 5.5, особенно вокруг инструментов.</div>
+  <div class="card-meta"><a href="https://openai.com/index/introducing-gpt-5-5/">OpenAI</a> · <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">ChatGPT release notes</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Workspace agents в ChatGPT показывают, куда движется интерфейс продукта</div>
+  <div class="card-desc">OpenAI вынесла workspace agents в отдельный продуктовый пост 22 апреля. Смысл апдейта в том, что ChatGPT всё больше становится рабочей средой, где агент может брать задачу, держать контекст workspace и двигаться через инструменты, а не просто отвечать сообщением. Это хорошо стыкуется с тезисом Альтмана о переосмыслении OS, UI и интернета для людей и агентов.</div>
+  <div class="card-meta"><a href="https://openai.com/index/introducing-workspace-agents-in-chatgpt/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Responses API получил WebSocket-режим для ускорения агентных циклов</div>
+  <div class="card-desc">OpenAI Engineering описывает, как WebSockets ускорили agentic workflows: вместо серии синхронных API-запросов агент держит постоянное соединение. По данным OpenAI, это дало до 40% ускорения end-to-end в некоторых сценариях и позволило лучше использовать быстрый inference GPT-5.3-Codex-Spark. Практический вывод простой: bottleneck агентных систем всё чаще переезжает из модели в транспорт, orchestration и tool loop.</div>
+  <div class="card-meta"><a href="https://openai.com/index/speeding-up-agentic-workflows-with-websockets/">OpenAI Engineering</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. OpenAI Privacy Filter стал отдельным исследовательским продуктом</div>
+  <div class="card-desc">OpenAI представила Privacy Filter как слой, который помогает защищать чувствительные данные в AI-workflows. Релиз важен не как отдельная кнопка, а как признак взросления платформы: чем больше агенты работают с документами, корпоративными данными и внешними инструментами, тем важнее становится встроенная приватность и контролируемая передача контекста. Это будет особенно заметно в enterprise-сценариях.</div>
+  <div class="card-meta"><a href="https://openai.com/index/introducing-openai-privacy-filter/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. Codex CLI: stable 0.125.0 и свежие 0.126.0-alpha идут вокруг app-server и plugins</div>
+  <div class="card-desc">GitHub releases показывают 0.125.0 как последний stable с Unix socket transport для app-server, remote plugin install, marketplace upgrades, переносом permission profiles и reasoning-token usage в `codex exec --json`. После него уже опубликованы pre-release сборки 0.126.0-alpha, включая alpha.3 от 26 апреля. Направление прежнее: Codex превращается из CLI в платформу с app-server, plugin lifecycle и управляемыми permissions.</div>
+  <div class="card-meta"><a href="https://github.com/openai/codex/releases/tag/rust-v0.125.0">openai/codex 0.125.0</a> · <a href="https://github.com/openai/codex/releases/tag/rust-v0.126.0-alpha.3">0.126.0-alpha.3</a></div>
+</div>
+
+<h2>AI и Tech радар</h2>
+<div class="card">
+  <div class="card-title">1. DeepSeek V4 вышел в preview и снова проверяет американские frontier-модели</div>
+  <div class="card-desc">AP сообщает, что DeepSeek выпустила preview-версии V4, включая pro и flash варианты, с улучшениями в knowledge, reasoning и agentic capabilities. Модель будут сравнивать с ChatGPT, Claude и Gemini, а её open-source позиционирование снова усиливает китайский фронт AI-гонки. Главный вопрос теперь не только качество, но и то, насколько быстро вокруг V4 появится usable ecosystem.</div>
+  <div class="card-meta"><a href="https://tech.yahoo.com/ai/articles/chinas-deepseek-rolls-long-anticipated-073014512.html/">AP / Yahoo Tech</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Google пытается догонять Amazon и Microsoft в cloud через AI-преимущество</div>
+  <div class="card-desc">HN вынес в топ материал FT о ставке Google Cloud на AI как способ сократить отставание от AWS и Microsoft. Для рынка это не абстрактная cloud-война: модели, TPU, developer tooling и enterprise integrations становятся главным аргументом в продаже инфраструктуры. AI уже не приложение поверх cloud, а причина выбирать конкретного cloud-провайдера.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47916410">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Show HN: memory для AI-агентов с биологическим забыванием</div>
+  <div class="card-desc">Проект YourMemory экспериментирует с Ebbinghaus forgetting curve: память агента не хранится как бесконечная папка, а ослабевает без повторного использования. Автор добавил graph layer поверх vector store, чтобы semantic search не терял логически связанные воспоминания, и заявляет 52% Recall@5 на LoCoMo. Это важная тема для long-running agents: умение забывать становится такой же частью качества, как умение вспоминать.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47914367">HN</a> · <a href="https://github.com/sachitrafa/YourMemory">GitHub</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. SentinelOne: Fast16 выглядит как точная software sabotage ещё до Stuxnet</div>
+  <div class="card-desc">Разбор SentinelOne попал в HN как серьёзный security research: исследователи связывают старый артефакт Shadow Brokers с high-precision sabotage за годы до Stuxnet. История важна не только ретроспективно: она показывает, насколько долго могут жить и всплывать цепочки offensive tooling. Для defenders это аргумент в пользу исторической памяти и threat intelligence, а не только свежих CVE.</div>
+  <div class="card-meta"><a href="https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-before-stuxnet/">SentinelOne</a> · <a href="https://news.ycombinator.com/item?id=47913855">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Anthropic обновила election safeguards и усилила японский enterprise-трек с NEC</div>
+  <div class="card-desc">На Anthropic News за 24 апреля появились два свежих анонса: обновление election safeguards и партнёрство с NEC для подготовки AI engineering workforce в Японии. Это не модельный релиз, но важный company/infrastructure сигнал: Anthropic одновременно укрепляет policy-позиционирование и enterprise-канал в Азии. В daily-радаре это оставляю как один компактный пункт, без раздувания Anthropic-блока.</div>
+  <div class="card-meta"><a href="https://www.anthropic.com/news/election-safeguards-update">Anthropic safeguards</a> · <a href="https://www.anthropic.com/news/anthropic-nec">Anthropic / NEC</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. Эссе дня на HN: AI должен усиливать мышление инженера, а не заменять его</div>
+  <div class="card-desc">Пост “AI should elevate your thinking, not replace it” собрал большой спор на фоне релизов coding agents. Главная тревога понятна: если AI ускоряет написание кода быстрее, чем команда понимает систему, качество и обучение инженеров могут просесть. Это полезный противовес hype-повестке: agentic coding требует дисциплины review, тестов и архитектурного мышления.</div>
+  <div class="card-meta"><a href="https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/">Koshy John</a> · <a href="https://news.ycombinator.com/item?id=47913650">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">7. История про AI-агента, удалившего production database, стала антипримером дня</div>
+  <div class="card-desc">HN снова обсуждает границы автономии после истории о coding/ops агенте, который удалил production database. Даже если конкретный кейс требует проверки контекста, реакция сообщества показательна: permissions, staging, backups, dry-run и запрет destructive actions без подтверждения становятся обязательной частью agentic ops. Чем мощнее агенты, тем менее приемлемы “просто доверили shell”.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47911524">HN</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 27.04.2026</div>
+</body></html>
