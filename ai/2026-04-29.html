@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и технологии - 29 апреля 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и технологии</h1>
+<div class="date">29 апреля 2026</div>
+
+<h2>OpenAI, ChatGPT и Anthropic</h2>
+<div class="card">
+  <div class="card-title">1. OpenAI выводит модели, Codex и Managed Agents в AWS Bedrock</div>
+  <div class="card-desc">OpenAI и AWS объявили limited preview: GPT-5.5 и другие OpenAI-возможности приходят в Amazon Bedrock, а Codex можно будет запускать через Bedrock API в CLI, desktop app и VS Code extension. Для enterprise это сильный сигнал после обновления отношений с Microsoft: OpenAI всё активнее разводит продукт, cloud channel и procurement path по нескольким инфраструктурным партнёрам.</div>
+  <div class="card-meta"><a href="https://openai.com/index/openai-on-aws/">OpenAI</a> · <a href="https://www.aboutamazon.com/news/aws/bedrock-openai-models">Amazon</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. ChatGPT упростил выбор модели прямо в composer</div>
+  <div class="card-desc">В release notes от 28 апреля OpenAI пишет, что выбор модели переносится в composer, а thinking effort controls переезжают в model picker для Thinking и Pro моделей. Это небольшой UI-релиз, но он важен для everyday UX: модель и глубина reasoning становятся частью ввода запроса, а не отдельным поиском в настройках.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">ChatGPT release notes</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Codex CLI: stable остаётся 0.125.0, alpha дошла до 0.126.0-alpha.12</div>
+  <div class="card-desc">GitHub releases показывают новый pre-release `0.126.0-alpha.12` от 29 апреля, но его body содержит только короткую строку release без подробных notes. Содержательный stable-релиз остаётся `0.125.0`: Unix socket transport для app-server, remote plugin install, marketplace upgrades, permission profiles, model discovery и reasoning-token usage в `codex exec --json`.</div>
+  <div class="card-meta"><a href="https://github.com/openai/codex/releases">Codex releases</a> · <a href="https://github.com/openai/codex/releases/tag/rust-v0.125.0">0.125.0</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Anthropic запускает Claude for Creative Work с коннекторами к творческим инструментам</div>
+  <div class="card-desc">Anthropic объявила набор creative connectors для Claude вместе с партнёрами вроде Blender, Autodesk, Adobe, Ableton и Splice. Самый практичный кусок — Claude начинает работать рядом с существующим creative software: помогать с документацией, scripts/plugins, 3D, видео, музыкой и handoff между инструментами, а не только отвечать в чате.</div>
+  <div class="card-meta"><a href="https://www.anthropic.com/news/claude-for-creative-work">Anthropic</a></div>
+</div>
+<h2>AI и Tech радар</h2>
+<div class="card">
+  <div class="card-title">1. GitHub объяснил recent availability incidents ростом agentic workflows</div>
+  <div class="card-desc">GitHub CTO написал, что после декабря 2025 рост repo creation, PR activity, API usage, automation и large-repository workloads ускорился настолько, что GitHub перешёл от плана 10x capacity к проектированию под 30x текущего масштаба. Это редкий официальный datapoint: агентная разработка уже ломает assumptions инфраструктуры developer platforms.</div>
+  <div class="card-meta"><a href="https://github.blog/news-insights/company-news/an-update-on-github-availability/">GitHub Blog</a> · <a href="https://news.ycombinator.com/item?id=47932422">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. GitHub Copilot переходит на usage-based billing с 1 июня</div>
+  <div class="card-desc">GitHub объявил, что premium request units заменяются GitHub AI Credits, а расход будет считаться по token usage: input, output и cached tokens. Причина прямо названа: Copilot стал агентной платформой с долгими multi-step sessions, и фиксированная подписка больше плохо отражает реальную стоимость inference.</div>
+  <div class="card-meta"><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog</a> · <a href="https://news.ycombinator.com/item?id=47923357">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Wiz раскрыл CVE-2026-3854: RCE в GitHub через обычный git push</div>
+  <div class="card-desc">Wiz Research описал критическую уязвимость в internal git infrastructure GitHub, которая позволяла authenticated user выполнить команды на backend servers через standard git client. GitHub.com уже mitigated, но GitHub Enterprise Server требует обновления до исправленных версий; это одна из самых заметных security-историй дня для devops-команд.</div>
+  <div class="card-meta"><a href="https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854">Wiz</a> · <a href="https://news.ycombinator.com/item?id=47936479">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Ghostty уходит с GitHub и снова поднимает вопрос platform concentration</div>
+  <div class="card-desc">Пост Mitchell Hashimoto “Ghostty is leaving GitHub” стал главным HN-тредом дня. Дискуссия уже шире одного terminal emulator: разработчики спорят о зависимости open-source проектов от GitHub, переносимости issues/PR, moderation, outages и том, где должен жить независимый проект.</div>
+  <div class="card-meta"><a href="https://mitchellh.com/writing/ghostty-leaving-github">Ghostty post</a> · <a href="https://news.ycombinator.com/item?id=47939579">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Warp стал open-source и делает ставку на agent-first contribution workflow</div>
+  <div class="card-desc">Warp открыл client code под AGPL и описал contribution model, где сообщество помогает ставить задачи и проверять поведение, а agents/Oz делают значительную часть coding/planning/testing. Это важный эксперимент не только для терминала: компания публично тестирует модель open agentic development с issues как source of truth.</div>
+  <div class="card-meta"><a href="https://www.warp.dev/blog/warp-is-now-open-source">Warp</a> · <a href="https://news.ycombinator.com/item?id=47936264">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. Claude Code quality reports получили официальный postmortem, а HN спорит о цене багов</div>
+  <div class="card-desc">Anthropic выпустила postmortem по ухудшениям Claude Code, Agent SDK и Cowork, заявив, что API/inference layer не были затронуты и проблемы закрыты в v2.1.116. На HN параллельно обсуждают issue про system prompt bug, который мог тратить деньги пользователей и ломать managed agents; важный вывод — агентные продукты требуют observability не хуже backend-сервисов.</div>
+  <div class="card-meta"><a href="https://www.anthropic.com/engineering/april-23-postmortem">Anthropic Engineering</a> · <a href="https://news.ycombinator.com/item?id=47942492">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">7. Microsoft VibeVoice снова всплыл как сильный open-source voice AI</div>
+  <div class="card-desc">HN поднял репозиторий VibeVoice: open-source voice AI для long-form audio и speech workflows. Практический интерес для LAB AGENT понятный: локальная или self-hosted обработка встреч, голосовых заметок и длинных записей становится ближе к нормальному workflow, а не отдельному research-проекту.</div>
+  <div class="card-meta"><a href="https://github.com/microsoft/VibeVoice">GitHub</a> · <a href="https://news.ycombinator.com/item?id=47933236">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">8. Keep Android Open предупреждает о дальнейшей потере контроля над телефоном</div>
+  <div class="card-desc">Тред “Your phone is about to stop being yours” стал одним из крупнейших на HN. Сюжет вокруг Android/open ecosystem: sideloading, platform rules, app distribution и то, насколько пользователь реально владеет устройством, если производитель и магазин приложений всё сильнее контролируют execution path.</div>
+  <div class="card-meta"><a href="https://keepandroidopen.org/en/">Keep Android Open</a> · <a href="https://news.ycombinator.com/item?id=47935853">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">9. LocalSend снова в топе как open-source AirDrop для разных платформ</div>
+  <div class="card-desc">LocalSend — open-source cross-platform file transfer без облака и аккаунта — набрал сильный HN-тред. Это не frontier AI, но полезная инфраструктурная тема: когда устройства, OS и vendor ecosystems плохо дружат между собой, простой локальный transfer tool становится daily productivity инструментом.</div>
+  <div class="card-meta"><a href="https://github.com/localsend/localsend">GitHub</a> · <a href="https://news.ycombinator.com/item?id=47933208">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">10. Cua показывает background control macOS-приложений без перехвата курсора</div>
+  <div class="card-desc">Show HN Cua Driver описывает macOS automation path, где агент кликает, печатает, скроллит и читает native apps, не уводя курсор и focus у пользователя. Это важный кусок computer-use практики: GUI agents должны уметь работать рядом с человеком, а не захватывать всю desktop session.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47936312">HN</a> · <a href="https://github.com/trycua/cua">GitHub</a></div>
+</div>
+<div class="card">
+  <div class="card-title">11. OpenAI-пост про GPT-5.4 Pro и задачу Erdős возвращает AI-math в повестку</div>
+  <div class="card-desc">@OpenAI за последние 24 часа продвигал разбор задачи Erdős, открытой 60 лет и решённой с помощью GPT-5.4 Pro. Даже если это не новый релиз, это сильный research/brand-сигнал: frontier models всё чаще продаются через помощь в математике и scientific discovery, а не только coding и chat.</div>
+  <div class="card-meta"><a href="https://x.com/OpenAI/status/2049182118069358967">OpenAI on X</a></div>
+</div>
+<div class="card">
+  <div class="card-title">12. OpenAI Symphony появляется как open-source spec для orchestration</div>
+  <div class="card-desc">На главной OpenAI News зафиксирован engineering-пост “An open-source spec for orchestration: Symphony” от 27 апреля. В связке с AWS Bedrock Managed Agents и Codex app-server это показывает общий тренд: agent orchestration становится отдельным protocol/spec/software layer, а не скрытой частью одного UI.</div>
+  <div class="card-meta"><a href="https://openai.com/news/">OpenAI News</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 29.04.2026</div>
+</body></html>
