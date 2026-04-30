@@ -125,8 +125,8 @@ def render_page(tab, date_str, sections):
     out.append('</body></html>')
     return '\n'.join(out)
 
-ROOT = pathlib.Path('/home/sasha/WORK/digest-repo')
-SRC = pathlib.Path('/home/sasha/WORK/NEWS')
+ROOT = pathlib.Path('/home/sasha/AGENT/data/digest-repo')
+SRC = pathlib.Path('/home/sasha/AGENT/data/NEWS')
 
 for date_str in ['2026-04-14', '2026-04-15', '2026-04-16']:
     md = SRC / f'daily-{date_str}.md'

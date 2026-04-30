@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и технологии - 30 апреля 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и технологии</h1>
+<div class="date">30 апреля 2026</div>
+
+<h2>OpenAI, ChatGPT и Anthropic</h2>
+<div class="card">
+  <div class="card-title">1. ChatGPT переносит выбор модели прямо в composer</div>
+  <div class="card-desc">В release notes от 28 апреля OpenAI пишет, что model picker теперь доступен прямо там, где пользователь набирает prompt. Thinking effort controls тоже переезжают внутрь выбора Thinking/Pro моделей, так что выбор модели и глубины reasoning становится частью обычного workflow, а не отдельным заходом в настройки.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">ChatGPT release notes</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Codex CLI: stable остаётся 0.125.0, alpha-линейка 0.126 дошла до alpha.17</div>
+  <div class="card-desc">GitHub releases показывают свежий pre-release `0.126.0-alpha.17` от 30 апреля, но без полноценного changelog-body. Поэтому содержательным stable-ориентиром остаётся `0.125.0` от 24 апреля; alpha-часть трактую как сигнал активной подготовки 0.126, а не как пользовательский релиз с описанными функциями.</div>
+  <div class="card-meta"><a href="https://github.com/openai/codex/releases">Codex releases</a> · <a href="https://github.com/openai/codex/releases/tag/rust-v0.125.0">0.125.0</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Anthropic выпустила BioMysteryBench для проверки Claude на реальных биоданных</div>
+  <div class="card-desc">Новый research-post Anthropic описывает 99 bioinformatics tasks на реальных messy datasets. Главный результат: современные Claude-модели уже решают значимую долю задач, с которыми не справилась экспертная панель, но на самых трудных задачах остаётся проблема воспроизводимости — часть побед выглядит как удачный reasoning path, а не стабильный метод.</div>
+  <div class="card-meta"><a href="https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench">Anthropic Research</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Anthropic Fellows показали introspection adapters для аудита learned behaviors</div>
+  <div class="card-desc">В alignment-посте описан LoRA adapter, который помогает модели прямо сообщать о поведении, полученном во время fine-tuning. Это не магический self-awareness, а практичный audit tool: авторы проверяют его на AuditBench и covert fine-tuning attacks, где обычный black-box probing хуже видит скрытые поведения.</div>
+  <div class="card-meta"><a href="https://alignment.anthropic.com/2026/introspection-adapters/">Anthropic Alignment Science</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Mistral Medium 3.5 запускает remote agents в Vibe и Work mode в Le Chat</div>
+  <div class="card-desc">Mistral объявила Medium 3.5: dense 128B model с 256k context, open weights under modified MIT license и фокусом на coding/reasoning/productivity. Важнее упаковка: Vibe получает cloud agents для async coding, а Le Chat — Work mode для multi-step задач с инструментами, approvals и параллельными действиями.</div>
+  <div class="card-meta"><a href="https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5">Mistral AI</a></div>
+</div>
+<h2>AI и Tech радар</h2>
+<div class="card">
+  <div class="card-title">1. Zed вышел в 1.0 и закрепляет “GPU-native editor” как продуктовую ставку</div>
+  <div class="card-desc">Zed 1.0 вышел 29 апреля: команда отдельно подчёркивает, что строила editor не как web page, а вокруг GPU/shaders-подхода. В release notes вместе с 1.0 появились bookmarks, `git: view commit`, GIF в Markdown preview и поддержка новых DeepSeek-моделей, но главное — Zed формально вышел из long beta в полноценный editor-конкурент.</div>
+  <div class="card-meta"><a href="https://zed.dev/blog/zed-1-0">Zed Blog</a> · <a href="https://zed.dev/releases/stable/1.0.0">Release notes</a> · <a href="https://news.ycombinator.com/item?id=47949027">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Microsoft: AI business превысил $37B annual run rate, Azure вырос на 40%</div>
+  <div class="card-desc">В FY26 Q3 Microsoft отчиталась о $82.9B revenue и заявила, что AI business достиг $37B annual run rate, +123% год к году. Для рынка это важный datapoint: enterprise AI уже не только capex story, но и revenue story, хотя инфраструктурные расходы и capacity constraints остаются ключевым вопросом.</div>
+  <div class="card-meta"><a href="https://news.microsoft.com/source/2026/04/29/microsoft-cloud-and-ai-strength-fuels-third-quarter-results/">Microsoft</a> · <a href="https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/performance">Investor Relations</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Copy Fail / CVE-2026-31431 поднял тревогу вокруг Linux LPE</div>
+  <div class="card-desc">HN вынес в топ CVE-2026-31431, который авторы называют trivially exploitable Linux local privilege escalation. Для homelab и server-admin аудитории это важный security item: нужно ждать downstream patches и не относиться к “локальной” уязвимости как к низкому риску, особенно на shared machines и container-heavy hosts.</div>
+  <div class="card-meta"><a href="https://copy.fail/">copy.fail</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-31431">NVD</a> · <a href="https://news.ycombinator.com/item?id=47952181">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Claude Code issue про HERMES.md стал большим уроком по agent billing и prompts</div>
+  <div class="card-desc">HN обсуждает issue, где строка `HERMES.md` в commit history могла маршрутизировать Claude Code в extra usage billing. Независимо от деталей фикса, история полезна как warning: agent products всё чаще зависят от скрытого prompt/context routing, и observability по billing decisions должна быть такой же явной, как logs у backend-сервиса.</div>
+  <div class="card-meta"><a href="https://github.com/anthropics/claude-code/issues/53262">GitHub issue</a> · <a href="https://news.ycombinator.com/item?id=47952722">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Google готовит продажи TPU выбранным клиентам как новый удар по Nvidia</div>
+  <div class="card-desc">Yahoo Finance со ссылкой на Reuters пишет, что Google собирается продавать TPU-чипы “select customers”. Если этот канал станет шире, рынок AI compute получит ещё один non-Nvidia procurement path: не только cloud rental, но и hardware access для крупных клиентов, которые хотят контролировать inference/training economics.</div>
+  <div class="card-meta"><a href="https://finance.yahoo.com/markets/stocks/article/google-to-sell-tpu-chips-to-select-customers-in-latest-shot-at-nvidia-214900221.html">Yahoo Finance / Reuters</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. Ramp Sheets AI exfiltration снова показывает риск AI в финансовых таблицах</div>
+  <div class="card-desc">PromptArmor разобрал сценарий, где AI-функции вокруг spreadsheets могут вытаскивать финансовые данные через prompt injection/exfiltration path. Это не “один баг в одном продукте”, а типовой enterprise AI риск: когда модель имеет доступ к таблицам, почте и документам, security boundary становится намного сложнее обычного permissions UI.</div>
+  <div class="card-meta"><a href="https://www.promptarmor.com/resources/ramps-sheets-ai-exfiltrates-financials">PromptArmor</a> · <a href="https://news.ycombinator.com/item?id=47951786">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">7. OpenTrafficMap набирает внимание как открытая карта дорожного движения</div>
+  <div class="card-desc">OpenTrafficMap попал в топ HN как попытка сделать traffic data более открытой и пригодной для анализа. Это не frontier AI, но полезный infrastructure trend: города, logistics и mobility-сервисы зависят от данных, которые часто закрыты внутри коммерческих карт.</div>
+  <div class="card-meta"><a href="https://opentrafficmap.org/">OpenTrafficMap</a> · <a href="https://news.ycombinator.com/item?id=47953541">HN</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 30.04.2026</div>
+</body></html>
