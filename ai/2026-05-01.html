@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и технологии - 1 мая 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и технологии</h1>
+<div class="date">1 мая 2026</div>
+
+<h2>OpenAI, ChatGPT и Anthropic</h2>
+<div class="card">
+  <div class="card-title">1. OpenAI включила Advanced Account Security для ChatGPT и Codex</div>
+  <div class="card-desc">В release notes от 30 апреля OpenAI описывает новый opt-in режим для личных ChatGPT-аккаунтов: passkeys или security keys, отключение password/email/SMS sign-in, recovery keys, более короткие активные сессии и уведомления о входе. В отдельном продуктовой посте OpenAI подчёркивает, что защита распространяется и на Codex, потому что аккаунт всё чаще хранит рабочий и личный контекст.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">ChatGPT release notes</a> · <a href="https://openai.com/index/advanced-account-security/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Codex CLI: 0.128.0 стал latest stable, а 0.129 уже пошёл в alpha</div>
+  <div class="card-desc">GitHub releases показывают `rust-v0.128.0` от 30 апреля как latest stable, а после него уже опубликован `0.129.0-alpha.1`. Страница релиза почти без human-readable changelog, поэтому это стоит читать как быстрый shipping cadence и обновление бинарей, а не как список новых пользовательских функций.</div>
+  <div class="card-meta"><a href="https://github.com/openai/codex/releases">openai/codex releases</a> · <a href="https://github.com/openai/codex/releases/tag/rust-v0.128.0">0.128.0</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. OpenAI вывела модели, Codex и Managed Agents на AWS</div>
+  <div class="card-desc">OpenAI News от 28 апреля фиксирует новый AWS-канал для OpenAI models, Codex и Managed Agents. Для enterprise-покупателей это важнее, чем обычная интеграция: procurement и security teams получают ещё один официальный путь доступа, а OpenAI снижает зависимость от одного cloud distribution path.</div>
+  <div class="card-meta"><a href="https://openai.com/news/">OpenAI News</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Anthropic изучила 1 млн разговоров Claude про личные решения</div>
+  <div class="card-desc">Anthropic Research пишет, что около 6% выборки claude.ai conversations были про personal guidance: работа, отношения, переезд и похожие решения. Компания использовала анализ sycophancy, чтобы дообучить Claude Opus 4.7 и Mythos Preview; это редкий публичный пример, где safety research прямо связывают с training changes в новых моделях.</div>
+  <div class="card-meta"><a href="https://www.anthropic.com/research/claude-personal-guidance">Anthropic Research</a></div>
+</div>
+<h2>AI и Tech радар</h2>
+<div class="card">
+  <div class="card-title">1. Google DeepMind показала AI co-clinician для clinician-led care</div>
+  <div class="card-desc">Google DeepMind представила research initiative про multimodal agents в медицине: AI должен работать не вместо врача, а в triadic care под clinical authority. Важная деталь - dual-agent architecture, где Planner следит за безопасными границами, а Talker общается в simulated telemedical settings.</div>
+  <div class="card-meta"><a href="https://deepmind.google/blog/ai-co-clinician/">Google DeepMind</a> · <a href="https://x.com/GoogleDeepMind/status/2049867061279457761">X</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. IBM выпустила Granite 4.1: dense open models 3B, 8B и 30B</div>
+  <div class="card-desc">Документация IBM описывает Granite 4.1 как семейство dense-моделей с base/instruct вариантами и FP8 quantization. Особенно интересен 8B-уровень: IBM позиционирует его как enterprise-friendly модель для tool calling, coding, instruction following и math, а вся линейка идёт под Apache 2.0 с transparency disclosures.</div>
+  <div class="card-meta"><a href="https://www.ibm.com/granite/docs/models/granite4-1">IBM Granite docs</a> · <a href="https://huggingface.co/blog/ibm-granite/granite-4-1">Hugging Face</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. PyPI-пакет lightning был скомпрометирован supply-chain malware</div>
+  <div class="card-desc">Semgrep сообщает, что версии `lightning` 2.6.2 и 2.6.3 содержали вредоносный payload, который срабатывает при import, крадет токены и секреты, а затем пытается распространяться дальше через npm-пакеты и репозитории. Для AI-команд это особенно неприятно: PyTorch Lightning часто стоит в ML-зависимостях, CI и training pipelines.</div>
+  <div class="card-meta"><a href="https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training/">Semgrep</a> · <a href="https://news.ycombinator.com/item?id=47964617">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. cPanel/WHM CVE-2026-41940 стал большим web-hosting security fire drill</div>
+  <div class="card-desc">watchTowr разобрал authentication bypass в cPanel &amp; WHM, а HN и TechCrunch вынесли тему в верх дня. Практический риск простой: cPanel стоит на огромном числе shared hosting и managed servers, поэтому даже “обычная” auth bypass уязвимость быстро превращается в массовую поверхность атаки.</div>
+  <div class="card-meta"><a href="https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/">watchTowr</a> · <a href="https://news.ycombinator.com/item?id=47969288">HN</a> · <a href="https://techcrunch.com/2026/04/30/hackers-are-actively-exploiting-a-bug-in-cpanel-used-by-millions-of-websites/">TechCrunch</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. CopyFail перешёл из “Linux LPE” в спор о disclosure</div>
+  <div class="card-desc">HN обсуждает openwall thread о том, что CopyFail / CVE-2026-31431 мог не быть заранее раскрыт distro developers. После вчерашнего технического шума важен уже процесс: local privilege escalation в Linux тяжело патчить нормально, если downstream maintainers узнают одновременно с публикой.</div>
+  <div class="card-meta"><a href="https://www.openwall.com/lists/oss-security/2026/04/30/10">Openwall oss-security</a> · <a href="https://news.ycombinator.com/item?id=47965108">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. Rivian добавила режим полного отключения интернет-связи в машине</div>
+  <div class="card-desc">Самая заметная privacy-tech история HN: Rivian официально объясняет, что пользователь может отключить всю internet connectivity автомобиля. Это полезный продуктовый прецедент для connected cars: телеметрия и remote services становятся default, но у части клиентов появляется явный offline switch.</div>
+  <div class="card-meta"><a href="https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle">Rivian Support</a> · <a href="https://news.ycombinator.com/item?id=47967786">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">7. Chan Zuckerberg Biohub запускает $500M Virtual Biology Initiative</div>
+  <div class="card-desc">Biohub объявил инициативу на $500 млн для AI-powered biology. На фоне GPT-5.5, Claude bioinformatics evals и DeepMind medical agents это часть более широкого сдвига: frontier AI всё быстрее уходит из chat/coding в wet-lab adjacent workflows, моделирование биологии и ускорение исследований.</div>
+  <div class="card-meta"><a href="https://biohub.org/news/virtual-biology-initiative/">Chan Zuckerberg Biohub</a> · <a href="https://news.ycombinator.com/item?id=47970023">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">8. Durable queues, streams и pub/sub внутри SQLite-файла снова попали в HN</div>
+  <div class="card-desc">Проект Honker предлагает очереди, streams, pub/sub и cron scheduler поверх SQLite. Это не frontier AI, но важный devtools-тренд: всё больше infrastructure primitives пытаются жить рядом с приложением, без отдельного Redis/Kafka/worker stack для небольших систем.</div>
+  <div class="card-meta"><a href="https://honker.dev/">Honker</a> · <a href="https://news.ycombinator.com/item?id=47963316">HN</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 01.05.2026</div>
+</body></html>
