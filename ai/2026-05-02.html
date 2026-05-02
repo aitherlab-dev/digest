@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и технологии - 2 мая 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и технологии</h1>
+<div class="date">2 мая 2026</div>
+
+<h2>OpenAI, ChatGPT и Anthropic</h2>
+<div class="card">
+  <div class="card-title">1. Проверка release notes: свежий верхний пункт ChatGPT — Advanced Account Security</div>
+  <div class="card-desc">Официальные ChatGPT release notes всё ещё показывают 30 апреля как последний крупный пункт: opt-in режим с passkeys/security keys, recovery keys, укороченными сессиями и более жёстким recovery. Новых заметок за 2 мая на момент сборки не было, поэтому это скорее текущий status check, чем новый релиз дня.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">ChatGPT release notes</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Codex CLI: 0.129.0-alpha.2 вышел 1 мая, stable остаётся 0.128.0</div>
+  <div class="card-desc">`gh release list` по openai/codex показывает `rust-v0.129.0-alpha.2` от 1 мая как свежий pre-release, а `0.128.0` от 30 апреля остаётся latest stable. В stable 0.128.0 есть persisted `/goal` workflows, `codex update`, keymaps, permission profiles, plugin marketplace/cache changes и external-agent session import.</div>
+  <div class="card-meta"><a href="https://github.com/openai/codex/releases">openai/codex releases</a> · <a href="https://github.com/openai/codex/releases/tag/rust-v0.128.0">0.128.0</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. OpenAI на AWS: модели, Codex и Managed Agents в Amazon Bedrock limited preview</div>
+  <div class="card-desc">Официальный пост OpenAI и анонс AWS фиксируют новый enterprise-канал: OpenAI models, Codex и Amazon Bedrock Managed Agents powered by OpenAI идут в Bedrock limited preview. Практический смысл — AWS-heavy компании получают Codex и OpenAI-модели через свой procurement, IAM, private networking и guardrails.</div>
+  <div class="card-meta"><a href="https://openai.com/index/openai-on-aws/">OpenAI</a> · <a href="https://aws.amazon.com/about-aws/whats-new/2026/04/bedrock-openai-models-codex-managed-agents/">AWS</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Anthropic: новых майских релизов нет, последний заметный блок — Claude for Creative Work</div>
+  <div class="card-desc">Anthropic News на момент проверки не показывал свежий релиз за 1-2 мая; последний близкий продуктовый блок — Claude for Creative Work от 28 апреля. Там Anthropic развивает Claude как creative workspace: SketchUp для 3D-стартов из разговора, Splice для музыкальных samples и Claude Design для визуальных вариантов с экспортом в Canva.</div>
+  <div class="card-meta"><a href="https://www.anthropic.com/news">Anthropic News</a> · <a href="https://www.anthropic.com/news/claude-for-creative-work">Claude for Creative Work</a></div>
+</div>
+<h2>AI и Tech радар</h2>
+<div class="card">
+  <div class="card-title">1. Microsoft Agent 365 стал GA как control plane для корпоративных агентов</div>
+  <div class="card-desc">Microsoft вывела Agent 365 в general availability: единый registry, observability, governance, security policies, Entra access controls, Defender/Purview integrations и аудит действий агентов. Цена — $15 за пользователя в месяц, а в составе Microsoft 365 E7 это часть более широкого “Frontier Suite” за $99.</div>
+  <div class="card-meta"><a href="https://www.microsoft.com/en-sg/microsoft-agent-365">Microsoft Agent 365</a> · <a href="https://www.microsoft.com/en-us/security/blog/2026/03/09/secure-agentic-ai-for-your-frontier-transformation/">Microsoft Security Blog</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Ubuntu и Canonical пережили длительный DDoS по публичной инфраструктуре</div>
+  <div class="card-desc">TechCrunch пишет, что атака затронула Ubuntu/Canonical сайты и сервисы, включая инфраструктуру, от которой зависят обновления и установки. Для devops-аудитории это болезненный reminder: даже базовая distro infrastructure остаётся частью supply chain, а DDoS по ней быстро превращается в операционную проблему для пользователей.</div>
+  <div class="card-meta"><a href="https://techcrunch.com/2026/05/01/ubuntu-services-hit-by-outages-after-ddos-attack/">TechCrunch</a> · <a href="https://news.ycombinator.com/item?id=47978892">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Spotify вводит Verified badge для человеческих артистов на фоне AI music flood</div>
+  <div class="card-desc">Guardian/AFP пишет, что Spotify начнёт показывать зелёный “Verified by Spotify” badge для профилей, прошедших проверку authenticity. AI-generated personae не смогут получить значок, а рядом появится больше контекста об активности артиста; Deezer тем временем оценивает synthetic tracks в 44% новых upload-ов на своей платформе.</div>
+  <div class="card-meta"><a href="https://www.theguardian.com/technology/2026/apr/30/spotify-verified-badge-human-artists-from-ai">The Guardian</a> · <a href="https://news.ycombinator.com/item?id=47976856">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Show HN: Adam переносит AI-agent workflow внутрь CAD</div>
+  <div class="card-desc">HN-пост Adam описывает AI CAD Harness для Autodesk Fusion и Onshape: агент читает feature tree, чистит модель, переименовывает features, параметризует детали и работает внутри привычного CAD, а не выдаёт “чёрный ящик” STL. Это хороший пример того, как agentic UI уходит в профессиональные инструменты с жёсткими рабочими объектами.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47977694">HN</a> · <a href="https://fusion.adam.new/install">Adam Fusion</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. AI water use: заметный HN-тред против паники без расчётов</div>
+  <div class="card-desc">California WaterBlog оценил водопотребление дата-центров в Калифорнии и пришёл к выводу, что оно может быть заметным локально, но в масштабе штата намного меньше сельского хозяйства и общего human water use. Ценность текста не в оправдании дата-центров, а в требовании считать физику и локальные ограничения, прежде чем превращать AI-water тему в лозунг.</div>
+  <div class="card-meta"><a href="https://californiawaterblog.com/2026/04/26/ai-water-use-distractions-and-lessons-for-california/">California WaterBlog</a> · <a href="https://news.ycombinator.com/item?id=47977383">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. Intel auto-round снова поднял тему low-bit LLM quantization</div>
+  <div class="card-desc">Проект `intel/auto-round` позиционируется как high-accuracy low-bit quantization для LLM inference на CPU/XPU/CUDA, совместимый с vLLM, SGLang и Transformers. Для локального и enterprise inference это практический слой: меньше память и стоимость без полной замены serving stack.</div>
+  <div class="card-meta"><a href="https://github.com/intel/auto-round">GitHub</a> · <a href="https://news.ycombinator.com/item?id=47972659">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">7. DeepSeek V4 обсуждают как “почти frontier” модель по низкой цене</div>
+  <div class="card-desc">Пост Simon Willison про DeepSeek V4 снова попал в HN: акцент на том, что модель подошла к frontier-качеству при существенно меньшей цене. Это важно для builders, потому что cost/performance уже решает, какие agent workflows можно держать always-on, а какие остаются demo.</div>
+  <div class="card-meta"><a href="https://simonwillison.net/2026/Apr/24/deepseek-v4/">Simon Willison</a> · <a href="https://news.ycombinator.com/item?id=47977026">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">8. Microsoft lib0xc: C standard library-adjacent API для safer systems programming</div>
+  <div class="card-desc">HN обсуждает `microsoft/lib0xc` — набор C API рядом со standard library, но с более безопасными паттернами для systems code. Тема не flashy, но важная: безопасность C/C++ всё чаще улучшают не только переписыванием на Rust, а маленькими совместимыми слоями для существующего кода.</div>
+  <div class="card-meta"><a href="https://github.com/microsoft/lib0xc">GitHub</a> · <a href="https://news.ycombinator.com/item?id=47978834">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">9. WhatCable показывает реальные возможности USB-C кабеля прямо на Mac</div>
+  <div class="card-desc">Show HN WhatCable — маленькое open-source Swift/SwiftUI приложение в menu bar, которое читает доступные системе данные о кабеле: зарядная мощность, data speed, display support, Thunderbolt и другое. Это удачный пример “boring tool”: решает ежедневную физическую проблему, где одинаковые кабели ведут себя совершенно по-разному.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47972511">HN</a> · <a href="https://github.com/darrylmorley/whatcable">GitHub</a></div>
+</div>
+<div class="card">
+  <div class="card-title">10. 404 Media: Flock использовала камеры в детском зале гимнастики как sales demo</div>
+  <div class="card-desc">HN поднял расследование 404 Media о том, что город узнал: Flock получала доступ к камерам в детском gymnastics room для демонстрации продаж, а контракт всё равно продлили. Это privacy/security история про то, как vendor access и surveillance tooling становятся нормой быстрее, чем появляются реальные governance checks.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47978370">HN</a> · <a href="https://www.404media.co/city-learns-flock-accessed-cameras-in-childrens-gymnastics-room-as-a-sales-pitch-demo-renews-contract-anyway/">404 Media</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 02.05.2026</div>
+</body></html>
