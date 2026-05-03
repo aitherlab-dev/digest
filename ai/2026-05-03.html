@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и технологии - 3 мая 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и технологии</h1>
+<div class="date">3 мая 2026</div>
+
+<h2>OpenAI, ChatGPT и Anthropic</h2>
+<div class="card">
+  <div class="card-title">1. ChatGPT release notes: свежий верхний пункт всё ещё Advanced Account Security</div>
+  <div class="card-desc">Официальные ChatGPT release notes обновлены около 12 часов назад, но верхний dated item остаётся от 30 апреля: optional Advanced Account Security для личных аккаунтов. Он включает passkeys/security keys, recovery keys, отключение более слабых sign-in/recovery paths, короткие сессии и login notifications; новых заметок за 3 мая на момент сборки не было.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">OpenAI Help</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. OpenAI news: последняя продуктовая волна — security, AWS и orchestration spec</div>
+  <div class="card-desc">На официальной OpenAI News верхние свежие карточки — Advanced Account Security от 30 апреля, community safety от 28 апреля, OpenAI models/Codex/Managed Agents on AWS от 28 апреля и Symphony orchestration spec от 27 апреля. Поэтому за 3 мая в дайджесте нет нового OpenAI-релиза, а есть status check: enterprise-канал через AWS и agent orchestration остаются главной линией недели.</div>
+  <div class="card-meta"><a href="https://openai.com/news/">OpenAI News</a> · <a href="https://openai.com/index/openai-on-aws/">OpenAI on AWS</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Codex CLI: свежий pre-release 0.129.0-alpha.2, latest stable — 0.128.0</div>
+  <div class="card-desc">`gh release list` по `openai/codex` показывает `rust-v0.129.0-alpha.2` от 1 мая как свежий pre-release, а `rust-v0.128.0` от 30 апреля как latest stable. В 0.128.0 ключевые изменения: persisted `/goal` workflows, `codex update`, permission profiles, marketplace/cache для plugins, external-agent session import и явная настройка MultiAgentV2.</div>
+  <div class="card-meta"><a href="https://github.com/openai/codex/releases">openai/codex releases</a> · <a href="https://github.com/openai/codex/releases/tag/rust-v0.128.0">0.128.0</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Model release notes OpenAI: новых майских model notes нет</div>
+  <div class="card-desc">Официальная страница model release notes обновлялась шесть дней назад, но верхний model item остаётся GPT-5.4 mini in ChatGPT от 18 марта. Это важно отделить от продуктовых заметок ChatGPT: в model notes за 3 мая нового API/model launch не появилось.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/9624314-model-release-notes">OpenAI Help</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Anthropic: новых майских постов нет, последний продуктовый блок — Claude for Creative Work</div>
+  <div class="card-desc">Anthropic News на момент проверки показывает верхними крупными материалами Claude Opus 4.7 от 16 апреля, Claude Design от 17 апреля и Claude for Creative Work от 28 апреля. В research верхний свежий материал — Project Deal от 24 апреля, а engineering выделяет recent Claude Code quality reports и managed agents; нового релиза за 3 мая не найдено.</div>
+  <div class="card-meta"><a href="https://www.anthropic.com/news">Anthropic News</a> · <a href="https://www.anthropic.com/research">Research</a> · <a href="https://www.anthropic.com/engineering">Engineering</a></div>
+</div>
+<h2>AI и Tech радар</h2>
+<div class="card">
+  <div class="card-title">1. VS Code обсуждают за автоматический `Co-Authored-by Copilot` в commit messages</div>
+  <div class="card-desc">Главный HN-тред дня указывает на PR/issue в Microsoft VS Code: пользователи заметили добавление `Co-Authored-by Copilot` в commits независимо от того, использовался ли Copilot. Это не просто косметика: attribution в git history влияет на доверие, compliance и то, как команды маркируют AI-assisted work.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47989883">HN</a> · <a href="https://github.com/microsoft/vscode/pull/310226">GitHub</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Maryland первым запретил AI-driven price increases в grocery stores</div>
+  <div class="card-desc">HN поднял NYT-историю о том, что Maryland стал первым штатом, запретившим AI-driven grocery price increases. Тема важна шире одной юрисдикции: dynamic/surveillance pricing из рекламных и travel markets приходит в базовые товары, и регуляторы начинают ограничивать алгоритмическое ценообразование до массового внедрения.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47992349">HN</a> · <a href="https://www.nytimes.com/2026/05/01/business/surveillance-pricing-groceries-maryland.html">NYT</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Open Design предлагает использовать coding agent как design engine</div>
+  <div class="card-desc">HN снова обсуждает `nexu-io/open-design`: local-first open-source alternative to Claude Design, где существующие агенты вроде Claude Code, Codex, Cursor или Gemini превращаются в генератор design systems, HTML/PDF/PPTX и визуальных вариантов. Это показывает, что agent workflows уходят из кода в product/design surfaces.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47985750">HN</a> · <a href="https://github.com/nexu-io/open-design">GitHub</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. “The agent harness belongs outside the sandbox” — новый спор о границах agent runtime</div>
+  <div class="card-desc">Пост Mendral на HN утверждает, что harness для агента должен жить вне sandbox, а не внутри неё: agent runtime должен иметь стабильный control plane, approvals и наблюдаемость, а sandbox — только исполнять ограниченный workload. Это полезный architecture argument для всех, кто строит coding agents или MCP-heavy tools.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47990675">HN</a> · <a href="https://www.mendral.com/blog/agent-harness-belongs-outside-sandbox">Mendral</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Mercury рассказал о “couple million lines of Haskell” в production</div>
+  <div class="card-desc">Блог Haskell.org про Mercury стал заметным HN-тредом: несколько миллионов строк Haskell в production engineering для финансового продукта. Для dev-индустрии это редкий масштабный counterexample к тезису, что typed functional programming остаётся только academic niche.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47991802">HN</a> · <a href="https://blog.haskell.org/a-couple-million-lines-of-haskell/">Haskell.org</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. Ladybird подвёл апрельский итог разработки браузера</div>
+  <div class="card-desc">This Month in Ladybird за апрель 2026 снова попал в HN. Для browser-engine мира это важный ongoing signal: независимый браузерный стек продолжает накапливать совместимость, web-platform fixes и developer attention на фоне доминирования Chromium/WebKit/Gecko.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47990318">HN</a> · <a href="https://ladybird.org/newsletter/2026-04-30/">Ladybird</a></div>
+</div>
+<div class="card">
+  <div class="card-title">7. Dav2d от VideoLAN вывел AV2 decoder в центр HN-дискуссии</div>
+  <div class="card-desc">Репозиторий `videolan/dav2d` стал одним из крупных HN-тредов дня. Интерес понятен: новые video codecs — это не только compression ratios, но и реальная поддержка decoding, performance, licensing и путь к тому, чтобы формат стал usable в браузерах, players и mobile devices.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47988504">HN</a> · <a href="https://code.videolan.org/videolan/dav2d">VideoLAN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">8. California начнёт штрафовать driverless cars за нарушения ПДД</div>
+  <div class="card-desc">BBC-история в HN: California готовит ticketing regime для autonomous vehicles, которые нарушают traffic laws. Для self-driving компаний это меняет incentives: если fleet получает реальные штрафы, compliance становится не PR-метрикой, а операционным cost center.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47988742">HN</a> · <a href="https://www.bbc.com/news/articles/clypjx3rg2go">BBC</a></div>
+</div>
+<div class="card">
+  <div class="card-title">9. Uber хочет превратить водителей в sensor grid для self-driving companies</div>
+  <div class="card-desc">TechCrunch пишет, что Uber рассматривает свою сеть водителей как распределённую sensor grid для автономных компаний. Это важный platform move: gig fleet может стать data-acquisition infrastructure, а не только transportation marketplace.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47987333">HN</a> · <a href="https://techcrunch.com/2026/05/01/uber-wants-to-turn-its-millions-of-drivers-into-a-sensor-grid-for-self-driving-companies/">TechCrunch</a></div>
+</div>
+<div class="card">
+  <div class="card-title">10. Refusal in Language Models Is Mediated by a Single Direction снова обсуждают на HN</div>
+  <div class="card-desc">HN поднял arXiv-работу о том, что refusal behavior в language models может быть связан с одной direction в activation space. Для safety research это не новый продукт, а важная interpretability рамка: если refusal можно усилить, ослабить или перенаправить low-level intervention, guardrails нужно оценивать глубже prompt policy.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47986136">HN</a> · <a href="https://arxiv.org/abs/2406.11717">arXiv</a></div>
+</div>
+<div class="card">
+  <div class="card-title">11. MLJAR Studio показывает локального AI data analyst с сохранением анализа как notebooks</div>
+  <div class="card-desc">Show HN MLJAR Studio предлагает desktop app, где пользователь задаёт вопросы к данным, AI генерирует и исполняет Python локально, а весь workflow сохраняется как `.ipynb`. Это правильный продуктовый компромисс между chat-with-data и воспроизводимым Jupyter workflow.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47985077">HN</a> · <a href="https://mljar.com/">MLJAR</a></div>
+</div>
+<div class="card">
+  <div class="card-title">12. Meta Pyrefly обвиняют в конфликте с конкурирующими Python extensions</div>
+  <div class="card-desc">HN обсуждает issue, где утверждается, что Meta Pyrefly мешает конкурирующим Python extensions без явного предупреждения пользователя. Даже если конкретная причина требует проверки внутри issue, сама дискуссия важна: IDE/extensions могут менять developer environment сильнее, чем кажется по UI.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=47987854">HN</a> · <a href="https://github.com/facebook/pyrefly/issues/3292">GitHub</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 03.05.2026</div>
+</body></html>
