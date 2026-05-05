@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и технологии - 5 мая 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и технологии</h1>
+<div class="date">5 мая 2026</div>
+
+<h2>OpenAI, ChatGPT и Anthropic</h2>
+<div class="card">
+  <div class="card-title">1. OpenAI показала, как масштабирует low-latency voice AI через WebRTC</div>
+  <div class="card-desc">Официальный engineering post от 4 мая описывает relay + transceiver architecture для ChatGPT voice и Realtime API: маленькая публичная UDP surface, routing по ICE ufrag, geo-steered signaling и stateful WebRTC ownership в transceiver. Главная мысль: real-time voice agents упираются не только в model quality, но и в latency, jitter, packet loss и Kubernetes-friendly media routing.</div>
+  <div class="card-meta"><a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. ChatGPT release notes: свежий dated item остаётся Advanced Account Security</div>
+  <div class="card-desc">Официальные ChatGPT release notes на момент сборки обновлены 3 дня назад, но верхний датированный пункт остаётся 30 апреля: Advanced Account Security для personal accounts. Режим требует passkeys/security keys, recovery keys, shorter sessions и отключает weaker sign-in/recovery paths; нового ChatGPT пункта за 5 мая не найдено.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">OpenAI Help</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. OpenAI model release notes: майских model notes пока нет</div>
+  <div class="card-desc">Официальная страница model release notes обновлена 8 дней назад, но верхний model item всё ещё GPT-5.4 mini in ChatGPT от 18 марта. Это значит, что текущий OpenAI-сигнал дня не новый model launch, а инфраструктура real-time voice и Codex release cadence.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/9624314-model-release-notes">OpenAI Help</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Codex CLI: новый pre-release 0.129.0-alpha.6, stable остаётся 0.128.0</div>
+  <div class="card-desc">`gh release list -R openai/codex` показывает `rust-v0.129.0-alpha.6` от 5 мая 01:04 UTC как свежий pre-release; тело релиза содержит только короткую строку `Release 0.129.0-alpha.6`. Последний stable `rust-v0.128.0` от 30 апреля остаётся главным documented release: persisted `/goal` workflows, explicit permission profiles, plugin workflows, external session import и MultiAgentV2 настройки.</div>
+  <div class="card-meta"><a href="https://github.com/openai/codex/releases">openai/codex releases</a> · <a href="https://github.com/openai/codex/releases/tag/rust-v0.128.0">0.128.0</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Anthropic создаёт enterprise AI services company с Blackstone, H&amp;F и Goldman Sachs</div>
+  <div class="card-desc">Anthropic 4 мая объявила новую AI services company для mid-sized companies: applied AI engineers Anthropic будут работать с инженерами компании над Claude-powered systems в реальных операциях клиентов. Это не новый Claude model, а go-to-market и delivery capacity шаг: больше hands-on внедрений для организаций, которым не хватает собственного AI engineering ресурса.</div>
+  <div class="card-meta"><a href="https://www.anthropic.com/news/enterprise-ai-services-company">Anthropic</a></div>
+</div>
+
+<h2>AI и Tech радар</h2>
+<div class="card">
+  <div class="card-title">1. Pentagon расширяет classified AI deals с OpenAI, Google, Microsoft, AWS, Nvidia и другими</div>
+  <div class="card-desc">AP/TechCrunch пишут о соглашениях для deploying frontier AI capabilities на classified military systems. Сюжет важен не только списком vendors, но и governance risk: lawful operational use, human oversight, surveillance concerns и конфликт с Anthropic вокруг military constraints становятся частью enterprise AI рынка.</div>
+  <div class="card-meta"><a href="https://apnews.com/article/060cecf836c4cebcf012a3ceb5333f2c">AP</a> · <a href="https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/">TechCrunch</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Sierra raises $950M at valuation above $15B</div>
+  <div class="card-desc">TechCrunch сообщает, что Sierra привлекает $950 млн led by Tiger Global and GV, доводя valuation выше $15 млрд. Компания продаёт enterprise customer-experience agents, заявляет customers среди 40% Fortune 50 и уже говорит о billions of interactions; это один из главных funding signals agentic enterprise рынка.</div>
+  <div class="card-meta"><a href="https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/">TechCrunch</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Bun, похоже, начинает port from Zig to Rust</div>
+  <div class="card-desc">Главный свежий HN technical thread: в репозитории Bun появился commit с `docs/PORTING.md`, что выглядит как подготовка к переносу частей проекта из Zig в Rust. Важность не в одном commit, а в архитектурном сигнале для runtime/toolchain проекта, который годами ассоциировался именно с Zig.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=48016880">HN</a> · <a href="https://github.com/oven-sh/bun/commit/46d3bc29f270fa881dd5730ef1549e88407701a5">GitHub</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Redis получает array type после долгой разработки</div>
+  <div class="card-desc">Salvatore Sanfilippo описал новый Redis array type: индексируемые массивы, внутреннее переключение структуры при росте и text grep search mechanism. Отдельно интересно, что автор прямо пишет о manual и AI-assisted rewrite как части разработки системного data structure.</div>
+  <div class="card-meta"><a href="https://antirez.com/news/164">antirez</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Agent Skills от Addy Osmani формулирует quality gates для coding agents</div>
+  <div class="card-desc">Пост Addy Osmani стал HN-сигналом дня по agent workflows: skills описываются как способ упаковать senior engineering practices, workflows и quality gates для AI coding agents. Это продолжает trend, где ценность агента всё больше зависит не от одной модели, а от набора процедур, проверок и контекста вокруг неё.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=48015397">HN</a> · <a href="https://addyosmani.com/blog/agent-skills/">Addy Osmani</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. U.S. healthcare marketplaces передавали citizenship и race data ad-tech trackers</div>
+  <div class="card-desc">TechCrunch пересказывает Bloomberg investigation: почти все 20 state-run health insurance marketplaces sharing application information with Google, LinkedIn, Meta, Snap и другими через trackers. Это privacy/security story с высоким blast radius, потому что government health forms содержат чувствительные данные, а misconfigured pixels превращают их в advertising exhaust.</div>
+  <div class="card-meta"><a href="https://techcrunch.com/2026/05/04/us-healthcare-marketplaces-shared-citizenship-and-race-data-with-ad-tech-giants/">TechCrunch</a></div>
+</div>
+<div class="card">
+  <div class="card-title">7. Google закрывает free full-web index path для developers</div>
+  <div class="card-desc">Heise пишет, что Google Programmable Search Engines больше не дают новым engines искать весь web бесплатно: новый лимит — максимум 50 domains, а full-web path уходит в enterprise alternatives вроде Vertex AI Search или custom quote. Для indie search tools, education и nonprofit projects это practical breaking change к 1 января 2027.</div>
+  <div class="card-meta"><a href="https://www.heise.de/en/news/Google-is-discontinuing-its-free-web-search-index-for-developers-11152411.html">Heise</a></div>
+</div>
+<div class="card">
+  <div class="card-title">8. Apple подтверждает RCS end-to-end encryption в iOS 26.5</div>
+  <div class="card-desc">MacRumors сообщает, что Apple confirmed E2EE для RCS messages между iPhone и Android в iOS 26.5. Это важный cross-platform privacy шаг: green-bubble messaging получает security layer, который раньше был слабым местом по сравнению с iMessage.</div>
+  <div class="card-meta"><a href="https://www.macrumors.com/2026/05/04/ios-26-5-rcs-encryption/">MacRumors</a></div>
+</div>
+<div class="card">
+  <div class="card-title">9. Stripe описал overnight formatting 25M-line Ruby codebase</div>
+  <div class="card-desc">Stripe.dev рассказал историю rubyfmt rollout на кодовой базе примерно в 25 млн строк. Это rare developer-productivity case study: большой форматтерный rollout требует не только formatter quality, но и change management, CI confidence, reviewer ergonomics и понятный rollback story.</div>
+  <div class="card-meta"><a href="https://stripe.dev/blog/formatting-an-entire-25-million-line-codebase-overnight-the-rubyfmt-story">Stripe</a></div>
+</div>
+<div class="card">
+  <div class="card-title">10. HN обсуждает claim о clear-text passwords в памяти Microsoft Edge</div>
+  <div class="card-desc">Большой HN-тред поднял X-пост исследователя о том, что Microsoft Edge хранит passwords в memory in clear text даже когда они не используются. Это пока именно публичный claim и discussion thread, а не vendor advisory; практический смысл — напоминание, что browser password managers остаются security-sensitive local attack surface.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=48012735">HN</a> · <a href="https://twitter.com/L1v1ng0ffTh3L4N/status/2051308329880719730">X</a></div>
+</div>
+<div class="card">
+  <div class="card-title">11. Transformers Are Inherently Succinct снова всплыл в AI theory discussions</div>
+  <div class="card-desc">ArXiv paper о succinctness трансформеров попал в HN и стал маленьким theory counterweight к продуктовым новостям. Такие работы важны не как готовый tool, а как попытка формально объяснить, почему transformer architectures могут представлять сложные вычисления компактнее некоторых альтернатив.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=48014197">HN</a> · <a href="https://arxiv.org/abs/2510.19315">arXiv</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 05.05.2026</div>
+</body></html>
