@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и технологии - 6 мая 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и технологии</h1>
+<div class="date">6 мая 2026</div>
+
+<h2>OpenAI, ChatGPT и Anthropic</h2>
+<div class="card">
+  <div class="card-title">1. GPT-5.5 Instant стал новым стандартным ChatGPT</div>
+  <div class="card-desc">OpenAI 5 мая начала выкатывать GPT-5.5 Instant всем пользователям ChatGPT вместо GPT-5.3 Instant и отдельно заявила улучшения в точности, краткости, понимании изображений, STEM-вопросах и решении, когда нужен поиск в вебе. По официальной публикации, модель дала на 52.5% меньше ложных утверждений на чувствительных запросах про медицину, право и финансы.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">OpenAI Help</a> · <a href="https://openai.com/index/gpt-5-5-instant/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. ChatGPT получил источники памяти и более явную персонализацию</div>
+  <div class="card-desc">В тех же заметками о релизах OpenAI описывает новый слой sources для памяти: пользователь сможет видеть, какие сохранённые memories, прошлые чаты, пользовательские инструкции, а у Plus и Pro ещё файлы и подключённый Gmail, повлияли на персонализированный ответ. Это важное UX-изменение для доверия: персонализация становится не только сильнее, но и более проверяемой.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">OpenAI Help</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. ChatGPT для Excel и Google Sheets стал доступен глобально</div>
+  <div class="card-desc">OpenAI добавила ChatGPT в боковую панель Microsoft Excel и Google Sheets, чтобы работать с таблицами, формулами, бюджетами, сценариями и чисткой данных прямо внутри документов. В заметками о релизах отдельно указано, что Free и Go получают лимиты, а Plus и Pro используют те же агентные лимиты, что и Codex.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">OpenAI Help</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Codex CLI: серия предварительных релизов 0.129.0-alpha, стабильным остаётся 0.128.0</div>
+  <div class="card-desc">Команда `gh release list -R openai/codex` показывает свежие предварительные сборки 0.129.0-alpha.6, alpha.7 и alpha.8 от 5 мая, но последним стабильным релизом остаётся 0.128.0 от 30 апреля. На GitHub-странице changelog сейчас фактически отправляет на releases, поэтому дневной сигнал здесь именно частый alpha-цикл, а не новый документированный стабильный релиз.</div>
+  <div class="card-meta"><a href="https://github.com/openai/codex/releases">openai/codex releases</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Anthropic показала Model Spec Midtraining для лучшего обобщения alignment</div>
+  <div class="card-desc">В блоге Anthropic Alignment Science опубликована работу про MSM: дополнительный этап между pretraining и дообучения по выравниванию учит модель содержанию и причинам Model Spec. Авторы показывают, что такой подход может сильнее снижать агентного рассогласования и делать последующее дообучение более эффективным по данным.</div>
+  <div class="card-meta"><a href="https://alignment.anthropic.com/2026/msm/">Anthropic Alignment Science</a></div>
+</div>
+
+<h2>AI и технический радар</h2>
+<div class="card">
+  <div class="card-title">1. Google ускоряет Gemma 4 через MTP-драфтеры</div>
+  <div class="card-desc">Google выпустила Multi-Token Prediction драфтеры для семейства Gemma 4. Идея в спекулятивном декодировании: маленькая модель предлагает несколько следующих токенов, большая проверяет их параллельно, и это может давать до 3x ускорения без потери качества вывода.</div>
+  <div class="card-meta"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/">Google</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Издатели подали новый иск к Meta и Zuckerberg из-за Llama</div>
+  <div class="card-desc">AP сообщает, что пять издательств и Scott Turow обвиняют Meta и Mark Zuckerberg в незаконном использовании миллионов книг и материалов для обучения Llama. Это ещё один крупный узел спора о добросовестном использовании, пиратских корпусах и личной ответственности руководителей AI-компаний.</div>
+  <div class="card-meta"><a href="https://apnews.com/article/5609846d4d840014974a847b01079c32">AP</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. HN обсуждает сообщение о 4 ГБ локальной AI-модели в Chrome</div>
+  <div class="card-desc">Большой тред HN поднял жалобу на то, что Chrome может загружать локальную модель Gemini Nano размером около 4 ГБ без понятного пользовательского согласия. Tom's Guide и Cybernews описывают это как конфликт между будущими on-device AI-функциями браузера и ожиданиями контроля над диском, приватностью и обновлениями.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=48019219">HN</a> · <a href="https://www.tomsguide.com/ai/check-your-storage-chrome-may-be-downloading-a-4gb-ai-model-heres-what-we-know">Tom's Guide</a> · <a href="https://cybernews.com/security/google-chrome-ai-model-device-no-consent/">Cybernews</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Computer Use называют в 45 раз дороже структурированных API</div>
+  <div class="card-desc">Reflex сравнивает агентное управление интерфейсом с прямыми структурированными API и утверждает, что путь через экран и клики может быть примерно в 45 раз дороже. Тезис важен для продуктовой архитектуры агентов: компьютерное управление полезно как запасной путь, но основной процесс дешевле и надёжнее строить на нормальных API.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=48024859">HN</a> · <a href="https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/">Reflex</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Airbyte Agents предлагает общий слой контекста для рабочих систем</div>
+  <div class="card-desc">В Show HN команда Airbyte описала Agents как индекс и контекстный слой поверх множества операционных источников вроде Slack, Salesforce, Linear и Zendesk. Главная мысль: тонкие MCP-обёртки над отдельными API не решают задачу поиска сущностей и связей, если агенту сначала надо понять, что именно запрашивать.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=48023496">HN</a> · <a href="https://docs.airbyte.com/ai-agents/">Airbyte</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. GLM-5V-Turbo делает ставку на мультимодальных агентов</div>
+  <div class="card-desc">arXiv-статья GLM-5V-Turbo попала в HN как исследовательский сигнал по нативным мультимодальным foundation-моделям для агентов. Практическая интрига в том, как модели будут совмещать зрение, действия и рассуждение без грубой склейки отдельных систем.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=48026021">HN</a> · <a href="https://arxiv.org/abs/2604.26752">arXiv</a></div>
+</div>
+<div class="card">
+  <div class="card-title">7. Немецкая доменная зона пережила крупный сбой, связанный с DNSSEC</div>
+  <div class="card-desc">Самый верхний HN-тред дня посвящён сбою немецкой доменной зоны, который участники связывали с DNSSEC. Для инфраструктуры это болезненное напоминание: криптографическая защита DNS повышает доверие, но ошибки в цепочке подписи быстро становятся массовым отказом на уровне всей зоны.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=48027897">HN</a> · <a href="https://dnssec-analyzer.verisignlabs.com/nic.de">Verisign DNSSEC Analyzer</a></div>
+</div>
+<div class="card">
+  <div class="card-title">8. Async Rust снова критикуют за незавершённость базовой модели</div>
+  <div class="card-desc">Тред HN вокруг статьи Tweede Golf обсуждает тезис, что async Rust так и остался в состоянии минимально жизнеспособного продукта. Это не новость о релизе, а важный инженерный спор: экосистема Rust сильна в системном коде, но асинхронная модель всё ещё создаёт много когнитивной и библиотечной сложности.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=48019163">HN</a> · <a href="https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state">Tweede Golf</a></div>
+</div>
+<div class="card">
+  <div class="card-title">9. Уроки агентного программирования: что делать, когда код стал дешёвым</div>
+  <div class="card-desc">HN обсуждает пост David Breunig о том, как меняется разработка, когда генерация кода перестаёт быть главным ограничением. Смысл близок к текущей практике Codex: дороже становятся постановка задачи, проверка, архитектурные решения, тесты и способность вовремя удалить лишний код.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=48019025">HN</a> · <a href="https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html">David Breunig</a></div>
+</div>
+<div class="card">
+  <div class="card-title">10. Coinbase сокращает около 14% сотрудников</div>
+  <div class="card-desc">HN вывел в топ сообщение Brian Armstrong о решении сократить штат Coinbase примерно на 14%. Для технологического рынка это не только крипто-сюжет: крупные платформы продолжают пересобирать расходы и команды на фоне AI-гонки, регуляторного давления и ожиданий инвесторов.</div>
+  <div class="card-meta"><a href="https://news.ycombinator.com/item?id=48021368">HN</a> · <a href="https://twitter.com/brian_armstrong/status/2051616759145185723">X</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 06.05.2026</div>
+</body></html>
