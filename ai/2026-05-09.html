@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и технологии - 9 мая 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и технологии</h1>
+<div class="date">9 мая 2026</div>
+
+<h2>OpenAI, ChatGPT и Anthropic</h2>
+<div class="card">
+  <div class="card-title">1. OpenAI описала безопасный запуск Codex внутри собственных рабочих процессов</div>
+  <div class="card-desc">OpenAI выпустила материал о том, как внутри компании ограничивают Codex через sandbox, approvals, сетевые политики, управляемые конфиги, keyring для учётных данных и агентную телеметрию. Это важная публикация для enterprise-внедрения: ценность кодового агента теперь измеряется не только скоростью правок, но и тем, можно ли понять, что он сделал, почему и в каких границах.</div>
+  <div class="card-meta"><a href="https://openai.com/index/running-codex-safely/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Codex CLI вышел в стабильной версии 0.130.0</div>
+  <div class="card-desc">Релиз openai/codex 0.130.0 добавил отображение hooks в plugins, команду `codex remote-control`, постраничную загрузку больших thread, поддержку авторизации Bedrock через AWS login и улучшения `view_image` для multi-environment сессий. Важнее всего движение к app-server и удалённому управлению: Codex постепенно становится не только CLI, но и управляемой агентной средой.</div>
+  <div class="card-meta"><a href="https://github.com/openai/codex/releases/tag/rust-v0.130.0">openai/codex releases</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. OpenAI вынесла GPT-5.5-Cyber в ограниченный доступ для защитников</div>
+  <div class="card-desc">OpenAI расширяет программу TAC и даёт GPT-5.5-Cyber в preview проверенным командам, которые защищают критическую инфраструктуру и работают в авторизованных средах. Смысл релиза в разделении уровней доступа: обычный GPT-5.5 остаётся с жёсткими ограничителями, а проверенные защитники получают более полезный инструмент для анализа уязвимостей, malware, реверс-инжиниринга и проверки патчей.</div>
+  <div class="card-meta"><a href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. GPT-Realtime-2 и новые голосовые модели вышли в API</div>
+  <div class="card-desc">OpenAI представила GPT-Realtime-2, GPT-Realtime-Translate и GPT-Realtime-Whisper для живых голосовых сценариев. GPT-Realtime-2 получает 128K контекста, вызовы инструментов, управляемый тон и настраиваемый уровень рассуждения, а Translate и Whisper закрывают живой перевод и потоковую транскрибацию. Это переводит voice AI из режима «быстро ответить» в режим «слушать, рассуждать и действовать во время разговора».</div>
+  <div class="card-meta"><a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. ChatGPT получил Trusted Contact и свежие источники памяти</div>
+  <div class="card-desc">В заметках OpenAI появилась функция Trusted Contact для личных аккаунтов ChatGPT, а также свежие улучшения источников памяти и более персонализированных ответов. Для продукта это две разные линии зрелости: безопасность вокруг кризисных сигналов и прозрачность того, какие прошлые чаты, memories, файлы или подключённый Gmail повлияли на ответ.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">ChatGPT release notes</a> · <a href="https://openai.com/index/introducing-trusted-contact-in-chatgpt/">OpenAI</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. GPT-5.5 Instant стал новым default в ChatGPT</div>
+  <div class="card-desc">OpenAI пишет, что GPT-5.5 Instant заменяет GPT-5.3 Instant для всех пользователей ChatGPT и должен лучше отвечать по точности, ясности, краткости, пониманию изображений, STEM и веб-поиску. Для повседневного ChatGPT это крупный пользовательский апдейт: default-модель важнее витринных флагманов, потому что именно она обрабатывает большинство обычных запросов.</div>
+  <div class="card-meta"><a href="https://openai.com/index/gpt-5-5-instant/">OpenAI</a> · <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">ChatGPT release notes</a></div>
+</div>
+<div class="card">
+  <div class="card-title">7. Anthropic показала, как учила Claude объяснять причины безопасного поведения</div>
+  <div class="card-desc">Anthropic опубликовала исследование о том, как Claude учат объяснять причины: команда разбирает агентное рассогласование и утверждает, что обучение не только правильным действиям, но и объяснению этических причин работает лучше. Важная мысль для safety: простые демонстрации поведения могут не обобщаться, а обучение принципам и разнообразным средам даёт более устойчивый эффект.</div>
+  <div class="card-meta"><a href="https://www.anthropic.com/research/teaching-claude-why">Anthropic</a></div>
+</div>
+<h2>AI и технический радар</h2>
+<div class="card">
+  <div class="card-title">1. AI начинает ломать две культуры disclosure уязвимостей</div>
+  <div class="card-desc">Пост Jeff Kaufman стал крупным HN-тредом о том, как AI меняет поведение исследователей безопасности и вендоров. Проблема не только в скорости поиска багов: если модели массово помогают находить и эксплуатировать уязвимости, старые нормы координации disclosure, патчей и публичных PoC перестают выдерживать нагрузку.</div>
+  <div class="card-meta"><a href="https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures">Оригинал</a> · <a href="https://news.ycombinator.com/item?id=48066524">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. io_uring ZCRX получил свежий разбор локального повышения привилегий</div>
+  <div class="card-desc">Технический разбор про u32 и root описывает LPE в Linux вокруг механизма свободного списка ZCRX в io_uring. Для операторов Linux-хостов это тот класс материала, где нужно смотреть не только на CVE-номер, но и на включённые функции ядра, контейнерные границы и скорость доставки патча в реальные окружения.</div>
+  <div class="card-meta"><a href="https://ze3tar.github.io/post-zcrx.html">Оригинал</a> · <a href="https://news.ycombinator.com/item?id=48067734">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. AWS us-east-1 снова стал точкой отказа для крупных сервисов</div>
+  <div class="card-desc">CNBC и HN обсуждают сбой дата-центра AWS в Северной Вирджинии, восстановление которого заняло часы и затронуло сервисы вроде FanDuel и Coinbase. История знакомая, но важная: даже зрелые cloud-архитектуры продолжают зависеть от конкретных регионов, проблем питания и честной оценки зоны поражения.</div>
+  <div class="card-meta"><a href="https://www.cnbc.com/2026/05/08/aws-outage-data-center-fanduel-coinbase.html">CNBC</a> · <a href="https://news.ycombinator.com/item?id=48058197">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Google сломал reCAPTCHA для пользователей de-Googled Android</div>
+  <div class="card-desc">Издание Reclaim The Net пишет, что новая версия reCAPTCHA стала проблемой для пользователей Android без Google-сервисов. На HN это читают как очередной пример зависимости веб-доступа от доверия к вендору: формально проверка борется с fraud, но на практике может отрезать легитимных пользователей альтернативных сборок.</div>
+  <div class="card-meta"><a href="https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users">Оригинал</a> · <a href="https://news.ycombinator.com/item?id=48067119">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Meta отключает сквозное шифрование для Instagram Direct</div>
+  <div class="card-desc">PCMag сообщает, что Meta сворачивает E2EE для сообщений Instagram, а HN обсуждает последствия для приватности и регуляторного давления. Технически это выглядит как изменение продукта, но доверие пользователей зависит от простого вопроса: кто теперь может прочитать сообщения и на каких условиях.</div>
+  <div class="card-meta"><a href="https://www.pcmag.com/news/meta-shuts-down-end-to-end-encryption-for-instagram-dms-messaging">PCMag</a> · <a href="https://news.ycombinator.com/item?id=48069192">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. Apple и Intel обсуждают предварительную сделку по производству чипов в США</div>
+  <div class="card-desc">Reuters через HN сообщает, что Apple и Intel достигли предварительной договорённости о производстве чипов. Если сделка подтвердится, это будет не только supply-chain диверсификация Apple, но и политически важный сигнал для американского производства полупроводников после многих лет зависимости от внешних фабрик.</div>
+  <div class="card-meta"><a href="https://www.reuters.com/business/apple-intel-have-reached-preliminary-chip-making-deal-wsj-reports-2026-05-08/">Reuters</a> · <a href="https://news.ycombinator.com/item?id=48066169">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">7. LLM пробуют моделировать реальные системы в TLA+</div>
+  <div class="card-desc">Публикация SIGOPS задаёт прямой вопрос: могут ли LLM строить формальные модели реальных систем на TLA+. Это важная инженерная тема вне хайпа: если модель умеет переводить архитектурное описание в проверяемую спецификацию, она становится полезной не только для кода, но и для поиска гонок и ошибок протоколов до реализации.</div>
+  <div class="card-meta"><a href="https://www.sigops.org/2026/can-llms-model-real-world-systems-in-tla/">SIGOPS</a> · <a href="https://news.ycombinator.com/item?id=48065254">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">8. Mojo 1.0 Beta снова поднял спор о Python-совместимом системном языке</div>
+  <div class="card-desc">Mojo 1.0 Beta стал заметным HN-тредом о языке для высокопроизводительного Python-adjacent программирования. Интерес здесь практический: разработчики хотят производительность ближе к системному стеку, но без полного разрыва с Python-экосистемой, где уже живут AI и инструменты для данных.</div>
+  <div class="card-meta"><a href="https://mojolang.org/">Mojo</a> · <a href="https://news.ycombinator.com/item?id=48057901">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">9. ClojureScript получил async/await</div>
+  <div class="card-desc">Команда ClojureScript выпустила релиз с поддержкой async/await, что упрощает работу с асинхронным JavaScript-кодом без лишней церемонии. Для экосистемы это маленький, но полезный шаг: язык сохраняет свои идеи, но становится менее чужим для современных web API и привычек frontend-разработчиков.</div>
+  <div class="card-meta"><a href="https://clojurescript.org/news/2026-05-07-release">ClojureScript</a> · <a href="https://news.ycombinator.com/item?id=48059662">HN</a></div>
+</div>
+<div class="card">
+  <div class="card-title">10. GETadb предлагает агентам базу данных через обычный GET-запрос</div>
+  <div class="card-desc">Show HN проект GETadb делает каждый новый GET-запрос входом к базе, механизму синхронизации и примитивам auth, presence и streams. Идея выглядит странно, но хорошо попадает в agent-native интерфейсы: агенту не нужны секреты и ручная настройка, чтобы быстро поднять прототип с state.</div>
+  <div class="card-meta"><a href="https://www.getadb.com/">GETadb</a> · <a href="https://news.ycombinator.com/item?id=48065203">HN</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 09.05.2026</div>
+</body></html>
