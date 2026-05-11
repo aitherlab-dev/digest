@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и технологии - 11 мая 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и технологии</h1>
+<div class="date">11 мая 2026</div>
+
+<h2>Модели и генеративное видео</h2>
+<div class="card">
+  <div class="card-title">1. Hugging Face: Sulphur-2-base собрал LTX 2.3 веса, LoRA и усилитель промптов</div>
+  <div class="card-desc">Модель johnsnow1000/Sulphur-2-base обновилась 10 мая и содержит BF16, FP8, distilled-вариант, LoRA и GGUF-модуль для улучшения промптов. Практический интерес в том, что пакет сразу кладёт рядом веса и workflows для LTX 2.3, поэтому локальная генерация видео получает более готовый набор для экспериментов, а не один изолированный checkpoint.</div>
+  <div class="card-meta"><a href="https://huggingface.co/johnsnow1000/Sulphur-2-base">Hugging Face</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. Hugging Face: RefDecoder добавил отдельные декодеры для Wan 2.1 и VideoVAEPlus</div>
+  <div class="card-desc">Arrokothwhi/RefDecoder обновился 11 мая и публикует модели для Wan 2.1, VideoVAEPlus и image-to-video реконструкции. Это узкий, но полезный слой видеостека: качество результата часто упирается не только в большую модель, но и в то, как VAE и декодер возвращают движение, детали и стабильность кадров.</div>
+  <div class="card-meta"><a href="https://huggingface.co/Arrokothwhi/RefDecoder">Hugging Face</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Hugging Face: LTX-2.3-Workflows обновил ComfyUI-сценарии для видео</div>
+  <div class="card-desc">Volkin/LTX-2.3-Workflows обновился 10 мая и даёт ComfyUI workflows для dev, distilled и VEX-веток LTX 2.3. Для локального пользователя это важнее сухого релиза весов: готовые графы уменьшают ручную сборку пайплайна и позволяют быстрее проверить текст-в-видео, картинку-в-видео, расширение ролика и аудиосценарии.</div>
+  <div class="card-meta"><a href="https://huggingface.co/Volkin/LTX-2.3-Workflows">Hugging Face</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. Hugging Face: LTX-2.3-Quants упаковал квантованные варианты LTX 2.3</div>
+  <div class="card-desc">silveroxides/LTX-2.3-Quants обновился 10 мая и содержит несколько FP8, int8 и mxfp8 вариантов transformer-весов. Такие сборки нужны не для красивого анонса, а для реальной локальной эксплуатации: меньше VRAM, быстрее перебор настроек и выше шанс запустить LTX 2.3 на доступной домашней машине.</div>
+  <div class="card-meta"><a href="https://huggingface.co/silveroxides/LTX-2.3-Quants">Hugging Face</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Hugging Face: LivePortrait2 принёс ONNX-пакет для анимации портретов</div>
+  <div class="card-desc">Bytenames/LivePortrait2 обновился 10 мая и публикует ONNX-модели, базовые компоненты LivePortrait и демонстрационные материалы. Сценарий понятный: картинка-в-видео для говорящих или движущихся портретов, где локальная сборка выигрывает от переносимого формата и отдельного набора для выравнивания лица, извлечения движения и генерации кадра.</div>
+  <div class="card-meta"><a href="https://huggingface.co/Bytenames/LivePortrait2">Hugging Face</a></div>
+</div>
+<div class="card">
+  <div class="card-title">6. Hugging Face: Cosmos-H Surgical Simulator применил видео-модель к хирургической роботике</div>
+  <div class="card-desc">introvoyz041/Cosmos-H-Surgical-Simulator обновился 10 мая и основан на NVIDIA Cosmos Predict 2.5 2B. Это не массовая игрушка для генерации роликов, а domain-пакет для симуляции, оценки политик и мировой модели в хирургической роботике; важен сам перенос генеративного видео в инженерную проверку действий, а не только в визуальный контент.</div>
+  <div class="card-meta"><a href="https://huggingface.co/introvoyz041/Cosmos-H-Surgical-Simulator">Hugging Face</a></div>
+</div>
+<div class="card">
+  <div class="card-title">7. Hugging Face: Zeta-Chroma обновил дообучение Z-Image для генерации изображений</div>
+  <div class="card-desc">lodestones/Zeta-Chroma обновился 11 мая, набрал 195 лайков и публикует safetensors-вес вместе с workflow-артефактами. Важная деталь для локальной генерации изображений: модель идёт с лицензией Apache 2.0 и понятной привязкой к Z-Image, поэтому её проще оценивать как воспроизводимое дообучение, а не как случайный набор примеров.</div>
+  <div class="card-meta"><a href="https://huggingface.co/lodestones/Zeta-Chroma">Hugging Face</a></div>
+</div>
+<div class="card">
+  <div class="card-title">8. Hugging Face: FLUX.2 Klein 9B LoRA получил свежий локальный checkpoint</div>
+  <div class="card-desc">Модель hellorob/uf0d0w_flux2klein9b_v1 обновилась 11 мая и публикует LoRA для FLUX.2 Klein 9B, конфиг и серию sample-изображений. Для локального text-to-image это полезный ранний сигнал вокруг FLUX.2: появляются маленькие адаптеры, которые можно проверять быстрее, чем полное тяжёлое дообучение.</div>
+  <div class="card-meta"><a href="https://huggingface.co/hellorob/uf0d0w_flux2klein9b_v1">Hugging Face</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 11.05.2026</div>
+</body></html>
