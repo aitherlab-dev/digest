@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и генеративные медиа - 17 мая 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и генеративные медиа</h1>
+<div class="date">17 мая 2026</div>
+
+<h2>Видео, изображения и релизы AI-лабораторий</h2>
+<div class="card">
+  <div class="card-title">1. SANA-WM показала минутное 720p-видео с управлением камерой</div>
+  <div class="card-desc">NVIDIA и авторы SANA-WM опубликовали модель мира на 2,6 млрд параметров для генерации видео: минутных 720p-роликов из начального изображения и траектории камеры. Практический интерес в том, что это не короткий клип на несколько секунд, а локально ориентированный подход к длинной сцене с 6-DoF управлением камерой и заявкой на запуск на одном GPU.</div>
+  <div class="card-meta"><a href="https://nvlabs.github.io/Sana/WM/">NVIDIA SANA-WM</a> · <a href="https://arxiv.org/abs/2605.15178">arXiv</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. NVIDIA выложила AnyFlow-веса для Wan 2.1 в формате Diffusers</div>
+  <div class="card-desc">Семейство AnyFlow появилось на Hugging Face как набор весов для text-to-video, image-to-video и video-to-video на базе Wan 2.1. Главная идея — один distillation-подход, который не привязан к фиксированному числу шагов: пользователь может менять бюджет инференса и получать предсказуемое улучшение качества при большем числе проходов.</div>
+  <div class="card-meta"><a href="https://huggingface.co/nvidia/AnyFlow-FAR-Wan2.1-14B-Diffusers">Hugging Face</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. NVIDIA подготовила FP8-версию Wan 2.2 для text-to-video</div>
+  <div class="card-desc">Модель nvidia/Wan2.2-T2V-A14B-Diffusers-FP8 — это предквантованная версия Wan 2.2 для генерации видео из текста, опубликованная с Apache 2.0 и описанием запуска через NVIDIA Model Optimizer. Карточка важна для локального и self-hosted видео: FP8 снижает барьер развёртывания тяжёлого Wan 2.2 на GPU-ускоренной инфраструктуре.</div>
+  <div class="card-meta"><a href="https://huggingface.co/nvidia/Wan2.2-T2V-A14B-Diffusers-FP8">Hugging Face</a></div>
+</div>
+<div class="card">
+  <div class="card-title">4. OpenAI расширила визуальные ответы ChatGPT для бесплатных пользователей</div>
+  <div class="card-desc">В заметках ChatGPT от 12 мая OpenAI пишет, что бесплатные пользователи чаще будут видеть встроенные изображения из web-источников в ответах на визуальные темы. Это не новая генеративная модель, но релиз меняет визуальную поверхность ChatGPT: ответы о людях, местах и продуктах становятся ближе к иллюстрированному справочнику с атрибуцией источников.</div>
+  <div class="card-meta"><a href="https://help.openai.com/en/articles/6825453-release-notes">OpenAI Help Center</a></div>
+</div>
+<div class="card">
+  <div class="card-title">5. Anthropic выпустила пакет Claude для малого бизнеса</div>
+  <div class="card-desc">Anthropic представила набор коннекторов и готовых процессов, который встраивает Claude в QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace и Microsoft 365. Это продуктовый релиз лаборатории: Claude продвигается не как отдельный чат, а как рабочий слой для финансов, продаж, документов и ежедневных операций небольших компаний.</div>
+  <div class="card-meta"><a href="https://www.anthropic.com/news/claude-for-small-business">Anthropic</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 17.05.2026</div>
+</body></html>
