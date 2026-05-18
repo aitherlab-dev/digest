@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI и генеративные медиа - 18 мая 2026</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f14; color: #e0e0e0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+.date { color: #888; font-size: 14px; margin-bottom: 32px; }
+h2 { color: #fff; font-size: 22px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #2a2a3a; }
+.card { background: #1a1a24; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 14px; color: #b0b0b0; margin-bottom: 8px; }
+.card-desc a { color: #fff; text-decoration: none; }
+.card-desc a:hover { color: #5cb8ff; }
+.card-meta { font-size: 12px; color: #666; }
+.card-meta a { color: #5cb8ff; text-decoration: none; }
+.card-meta a:hover { text-decoration: underline; }
+.home-link { display: inline-block; margin-bottom: 20px; color: #5cb8ff; text-decoration: none; font-size: 14px; }
+.home-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2a3a; color: #555; font-size: 12px; text-align: center; }</style></head><body>
+<a href="../index.html" class="home-link">← Все дайджесты</a>
+<h1>AI и генеративные медиа</h1>
+<div class="date">18 мая 2026</div>
+
+<h2>Видео, изображения и релизы AI-лабораторий</h2>
+<div class="card">
+  <div class="card-title">1. Lightricks выпустила LipDub LoRA для синхронизации губ в LTX 2.3</div>
+  <div class="card-desc">Официальный репозиторий Lightricks/LTX-2.3-22b-IC-LoRA-LipDub добавляет к LTX 2.3 сценарий video-to-video для дубляжа и синхронизации губ. Это не workflow-only пакет: на Hugging Face лежат веса, карточка привязана к LTX 2.3, есть теги dubbing и lipdub, а загрузки уже измеряются тысячами. Практический смысл — локальный путь к говорящим персонажам и переозвучке без полной облачной платформы.</div>
+  <div class="card-meta"><a href="https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-LipDub">Hugging Face</a> · <a href="https://github.com/Lightricks/ComfyUI-LTXVideo">ComfyUI-LTXVideo</a></div>
+</div>
+<div class="card">
+  <div class="card-title">2. LongLive остаётся заметным open-source направлением для длинной генерации видео</div>
+  <div class="card-desc">Репозиторий NVlabs/LongLive вокруг ICLR 2026 работы про интерактивную длинную генерацию видео снова активен в обсуждениях и метаданных: проект описывает real-time подход к длинным роликам, разреженное внимание и экономную настройку. Для локального видео это важный класс решений: не просто улучшить отдельные 5 секунд, а удерживать контекст и управляемость на длинной сцене.</div>
+  <div class="card-meta"><a href="https://github.com/NVlabs/LongLive">GitHub</a> · <a href="https://arxiv.org/abs/2512.13604">arXiv</a></div>
+</div>
+<div class="card">
+  <div class="card-title">3. Diffusers 0.38 добавил новые конвейеры изображений и продолжил расширять медиа-стек</div>
+  <div class="card-desc">В официальном релизе Diffusers 0.38 появились новые конвейеры для генерации изображений, включая NucleusMoE-Image и Ernie-Image, а также крупные улучшения базовой библиотеки. Это релиз не про одну модель, а про инфраструктуру: чем быстрее такие pipelines входят в Diffusers, тем проще локально тестировать новые image-модели без ручной склейки кода.</div>
+  <div class="card-meta"><a href="https://github.com/huggingface/diffusers/releases/tag/v0.38.0">GitHub Releases</a></div>
+</div>
+
+<div class="footer">Собрано автоматически · 18.05.2026</div>
+</body></html>
